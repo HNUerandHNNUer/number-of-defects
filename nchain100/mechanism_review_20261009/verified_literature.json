@@ -1,0 +1,1936 @@
+[
+  {
+    "doi": "10.1126/science.1254784",
+    "retrieved": "2026-10-09",
+    "crossref": {
+      "title": [
+        "Topology and dynamics of active nematic vesicles"
+      ],
+      "author": [
+        {
+          "given": "Felix C.",
+          "family": "Keber",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Physics, Technische Universität München, 85748 Garching, Germany."
+            },
+            {
+              "name": "Institute for Advanced Study, Technische Universität München, 85748 Garching, Germany."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Etienne",
+          "family": "Loiseau",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Physics, Technische Universität München, 85748 Garching, Germany."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tim",
+          "family": "Sanchez",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Physics, Brandeis University, Waltham, MA 02474, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stephen J.",
+          "family": "DeCamp",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Physics, Brandeis University, Waltham, MA 02474, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Luca",
+          "family": "Giomi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "SISSA International School for Advanced Studies, Via Bonomea 265, 34136 Trieste, Italy."
+            },
+            {
+              "name": "Instituut-Lorentz for Theoretical Physics, Leiden University, 2333 CA Leiden, Netherlands."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mark J.",
+          "family": "Bowick",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Physics Department and Syracuse Biomaterials Institute, Syracuse University, Syracuse, NY 13244, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "M. Cristina",
+          "family": "Marchetti",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Physics Department and Syracuse Biomaterials Institute, Syracuse University, Syracuse, NY 13244, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zvonimir",
+          "family": "Dogic",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute for Advanced Study, Technische Universität München, 85748 Garching, Germany."
+            },
+            {
+              "name": "Department of Physics, Brandeis University, Waltham, MA 02474, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andreas R.",
+          "family": "Bausch",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Physics, Technische Universität München, 85748 Garching, Germany."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Science"
+      ],
+      "volume": "345",
+      "issue": "6201",
+      "page": "1135-1139",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            9,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2014,
+            9,
+            5
+          ]
+        ]
+      },
+      "published-online": null,
+      "is-referenced-by-count": 561,
+      "URL": "https://doi.org/10.1126/science.1254784"
+    },
+    "openalex": {
+      "id": "https://openalex.org/W1997445226",
+      "title": "Topology and dynamics of active nematic vesicles",
+      "publication_year": 2014,
+      "cited_by_count": 580,
+      "ids": {
+        "openalex": "https://openalex.org/W1997445226",
+        "doi": "https://doi.org/10.1126/science.1254784",
+        "mag": "1997445226",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/25190790"
+      },
+      "primary_location": {
+        "id": "doi:10.1126/science.1254784",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1126/science.1254784",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S3880285",
+          "display_name": "Science",
+          "issn_l": "0036-8075",
+          "issn": [
+            "0036-8075",
+            "0193-4511",
+            "1095-9203"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doyens",
+            "erih-plus",
+            "jufo-3",
+            "ki-jl-3",
+            "medline",
+            "norway-2"
+          ],
+          "host_organization": "https://openalex.org/P4310315823",
+          "host_organization_name": "American Association for the Advancement of Science",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315823"
+          ],
+          "host_organization_lineage_names": [
+            "American Association for the Advancement of Science"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Science",
+        "raw_type": "journal-article"
+      }
+    }
+  },
+  {
+    "doi": "10.1103/PhysRevE.97.042605",
+    "retrieved": "2026-10-09",
+    "openalex": {
+      "id": "https://openalex.org/W2614810344",
+      "title": "Dynamical patterns in nematic active matter on a sphere",
+      "publication_year": 2018,
+      "cited_by_count": 64,
+      "ids": {
+        "openalex": "https://openalex.org/W2614810344",
+        "doi": "https://doi.org/10.1103/physreve.97.042605",
+        "mag": "2614810344",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/29758687"
+      },
+      "primary_location": {
+        "id": "doi:10.1103/physreve.97.042605",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1103/physreve.97.042605",
+        "pdf_url": "http://link.aps.org/pdf/10.1103/PhysRevE.97.042605",
+        "source": {
+          "id": "https://openalex.org/S4210235286",
+          "display_name": "Physical review. E",
+          "issn_l": "2470-0045",
+          "issn": [
+            "2470-0045",
+            "2470-0053",
+            "2470-0061"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "jufo-2",
+            "ki-jl-1",
+            "medline",
+            "norway-1"
+          ],
+          "host_organization": "https://openalex.org/P4310320261",
+          "host_organization_name": "American Physical Society",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320261"
+          ],
+          "host_organization_lineage_names": [
+            "American Physical Society"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Physical Review E",
+        "raw_type": "journal-article"
+      }
+    },
+    "crossref": {
+      "title": [
+        "Dynamical patterns in nematic active matter on a sphere"
+      ],
+      "author": [
+        {
+          "given": "Silke",
+          "family": "Henkes",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "M. Cristina",
+          "family": "Marchetti",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rastko",
+          "family": "Sknepnek",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Physical Review E"
+      ],
+      "volume": "97",
+      "issue": "4",
+      "page": null,
+      "article-number": "042605",
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            16
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            16
+          ]
+        ]
+      },
+      "is-referenced-by-count": 63,
+      "URL": "https://doi.org/10.1103/physreve.97.042605"
+    }
+  },
+  {
+    "doi": "10.1038/s41598-017-05612-6",
+    "retrieved": "2026-10-09",
+    "crossref": {
+      "title": [
+        "Curvature controlled defect dynamics in topological active nematics"
+      ],
+      "author": [
+        {
+          "given": "Francesco",
+          "family": "Alaimo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Christian",
+          "family": "Köhler",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Axel",
+          "family": "Voigt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Scientific Reports"
+      ],
+      "volume": "7",
+      "issue": "1",
+      "page": null,
+      "article-number": "5211",
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            7,
+            12
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2017,
+            7,
+            12
+          ]
+        ]
+      },
+      "is-referenced-by-count": 46,
+      "URL": "https://doi.org/10.1038/s41598-017-05612-6"
+    },
+    "openalex": {
+      "id": "https://openalex.org/W2604073521",
+      "title": "Curvature controlled defect dynamics in topological active nematics",
+      "publication_year": 2017,
+      "cited_by_count": 51,
+      "ids": {
+        "openalex": "https://openalex.org/W2604073521",
+        "doi": "https://doi.org/10.1038/s41598-017-05612-6",
+        "mag": "2604073521",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/28701792"
+      },
+      "primary_location": {
+        "id": "doi:10.1038/s41598-017-05612-6",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/s41598-017-05612-6",
+        "pdf_url": "https://www.nature.com/articles/s41598-017-05612-6.pdf",
+        "source": {
+          "id": "https://openalex.org/S196734849",
+          "display_name": "Scientific Reports",
+          "issn_l": "2045-2322",
+          "issn": [
+            "2045-2322"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "doyens",
+            "jufo-1",
+            "ki-jl-1",
+            "medline",
+            "norway-1"
+          ],
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Scientific Reports",
+        "raw_type": "journal-article"
+      }
+    }
+  },
+  {
+    "doi": "10.1038/ncomms13483",
+    "retrieved": "2026-10-09",
+    "openalex": {
+      "id": "https://openalex.org/W2556241506",
+      "title": "Dynamic structure of active nematic shells",
+      "publication_year": 2016,
+      "cited_by_count": 88,
+      "ids": {
+        "openalex": "https://openalex.org/W2556241506",
+        "doi": "https://doi.org/10.1038/ncomms13483",
+        "mag": "2556241506",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/27869130"
+      },
+      "primary_location": {
+        "id": "doi:10.1038/ncomms13483",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/ncomms13483",
+        "pdf_url": "https://www.nature.com/articles/ncomms13483.pdf",
+        "source": {
+          "id": "https://openalex.org/S64187185",
+          "display_name": "Nature Communications",
+          "issn_l": "2041-1723",
+          "issn": [
+            "2041-1723"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "doyens",
+            "jufo-3",
+            "ki-jl-3",
+            "medline",
+            "norway-2"
+          ],
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Nature Communications",
+        "raw_type": "journal-article"
+      }
+    },
+    "crossref": {
+      "title": [
+        "Dynamic structure of active nematic shells"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2346-345X",
+          "authenticated-orcid": false,
+          "given": "Rui",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4618-9318",
+          "authenticated-orcid": false,
+          "given": "Ye",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mohammad",
+          "family": "Rahimi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Juan J.",
+          "family": "de Pablo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Nature Communications"
+      ],
+      "volume": "7",
+      "issue": "1",
+      "page": null,
+      "article-number": "13483",
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            21
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            21
+          ]
+        ]
+      },
+      "is-referenced-by-count": 80,
+      "URL": "https://doi.org/10.1038/ncomms13483"
+    }
+  },
+  {
+    "doi": "10.1039/C8SM02202J",
+    "retrieved": "2026-10-09",
+    "crossref": {
+      "title": [
+        "The interplay between activity and filament flexibility determines the emergent properties of active nematics"
+      ],
+      "author": [
+        {
+          "given": "Abhijeet",
+          "family": "Joshi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Martin Fisher School of Physics"
+            },
+            {
+              "name": "Brandeis University"
+            },
+            {
+              "name": "Waltham"
+            },
+            {
+              "name": "USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Elias",
+          "family": "Putzig",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Martin Fisher School of Physics"
+            },
+            {
+              "name": "Brandeis University"
+            },
+            {
+              "name": "Waltham"
+            },
+            {
+              "name": "USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Aparna",
+          "family": "Baskaran",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Martin Fisher School of Physics"
+            },
+            {
+              "name": "Brandeis University"
+            },
+            {
+              "name": "Waltham"
+            },
+            {
+              "name": "USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9211-2434",
+          "authenticated-orcid": false,
+          "given": "Michael F.",
+          "family": "Hagan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Martin Fisher School of Physics"
+            },
+            {
+              "name": "Brandeis University"
+            },
+            {
+              "name": "Waltham"
+            },
+            {
+              "name": "USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Soft Matter"
+      ],
+      "volume": "15",
+      "issue": "1",
+      "page": "94-101",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "is-referenced-by-count": 31,
+      "URL": "https://doi.org/10.1039/c8sm02202j"
+    },
+    "openalex": {
+      "id": "https://openalex.org/W2768413916",
+      "title": "The interplay between activity and filament flexibility determines the emergent properties of active nematics",
+      "publication_year": 2018,
+      "cited_by_count": 36,
+      "ids": {
+        "openalex": "https://openalex.org/W2768413916",
+        "doi": "https://doi.org/10.1039/c8sm02202j",
+        "mag": "2768413916",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/30520495"
+      },
+      "primary_location": {
+        "id": "doi:10.1039/c8sm02202j",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1039/c8sm02202j",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S6377669",
+          "display_name": "Soft Matter",
+          "issn_l": "1744-683X",
+          "issn": [
+            "1744-683X",
+            "1744-6848"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "jufo-2",
+            "medline",
+            "norway-2"
+          ],
+          "host_organization": "https://openalex.org/P4310320556",
+          "host_organization_name": "Royal Society of Chemistry",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320556"
+          ],
+          "host_organization_lineage_names": [
+            "Royal Society of Chemistry"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Soft Matter",
+        "raw_type": "journal-article"
+      }
+    }
+  },
+  {
+    "doi": "10.1038/s41467-025-62694-x",
+    "retrieved": "2026-10-09",
+    "crossref": {
+      "title": [
+        "Capturing nematic order on tissue surfaces of arbitrary geometry"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1353-3642",
+          "authenticated-orcid": false,
+          "given": "Julia",
+          "family": "Eckert",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Toby G. R.",
+          "family": "Andrews",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-2877-3389",
+          "authenticated-orcid": false,
+          "given": "Joseph",
+          "family": "Pollard",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yuan",
+          "family": "Shen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Patricia",
+          "family": "Essebier",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2086-1556",
+          "authenticated-orcid": false,
+          "given": "Benoit",
+          "family": "Ladoux",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1246-1608",
+          "authenticated-orcid": false,
+          "given": "Anne K.",
+          "family": "Lagendijk",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rashmi",
+          "family": "Priya",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1038-8956",
+          "authenticated-orcid": false,
+          "given": "Alpha S.",
+          "family": "Yap",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8544-7658",
+          "authenticated-orcid": false,
+          "given": "Richard G.",
+          "family": "Morris",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Nature Communications"
+      ],
+      "volume": "16",
+      "issue": "1",
+      "page": null,
+      "article-number": "7596",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            15
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            8,
+            15
+          ]
+        ]
+      },
+      "is-referenced-by-count": 5,
+      "URL": "https://doi.org/10.1038/s41467-025-62694-x"
+    },
+    "openalex": {
+      "id": "https://openalex.org/W4413257814",
+      "title": "Capturing nematic order on tissue surfaces of arbitrary geometry",
+      "publication_year": 2025,
+      "cited_by_count": 5,
+      "ids": {
+        "openalex": "https://openalex.org/W4413257814",
+        "doi": "https://doi.org/10.1038/s41467-025-62694-x",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/40817333"
+      },
+      "primary_location": {
+        "id": "doi:10.1038/s41467-025-62694-x",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/s41467-025-62694-x",
+        "pdf_url": "https://www.nature.com/articles/s41467-025-62694-x.pdf",
+        "source": {
+          "id": "https://openalex.org/S64187185",
+          "display_name": "Nature Communications",
+          "issn_l": "2041-1723",
+          "issn": [
+            "2041-1723"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "doyens",
+            "jufo-3",
+            "ki-jl-3",
+            "medline",
+            "norway-2"
+          ],
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by-nc-nd",
+        "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Nature Communications",
+        "raw_type": "journal-article"
+      }
+    }
+  },
+  {
+    "doi": "10.1103/PhysRevLett.110.228101",
+    "retrieved": "2026-10-09",
+    "crossref": {
+      "title": [
+        "Defect Annihilation and Proliferation in Active Nematics"
+      ],
+      "author": [
+        {
+          "given": "Luca",
+          "family": "Giomi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mark J.",
+          "family": "Bowick",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xu",
+          "family": "Ma",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "M. Cristina",
+          "family": "Marchetti",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Physical Review Letters"
+      ],
+      "volume": "110",
+      "issue": "22",
+      "page": null,
+      "article-number": "228101",
+      "published": {
+        "date-parts": [
+          [
+            2013,
+            5,
+            29
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2013,
+            5,
+            29
+          ]
+        ]
+      },
+      "is-referenced-by-count": 330,
+      "URL": "https://doi.org/10.1103/physrevlett.110.228101"
+    },
+    "openalex": {
+      "id": "https://openalex.org/W1992084946",
+      "title": "Defect Annihilation and Proliferation in Active Nematics",
+      "publication_year": 2013,
+      "cited_by_count": 354,
+      "ids": {
+        "openalex": "https://openalex.org/W1992084946",
+        "doi": "https://doi.org/10.1103/physrevlett.110.228101",
+        "mag": "1992084946",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/23767749"
+      },
+      "primary_location": {
+        "id": "doi:10.1103/physrevlett.110.228101",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1103/physrevlett.110.228101",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S24807848",
+          "display_name": "Physical Review Letters",
+          "issn_l": "0031-9007",
+          "issn": [
+            "0031-9007",
+            "1079-7114",
+            "1092-0145"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "jufo-3",
+            "ki-jl-2",
+            "medline",
+            "norway-2"
+          ],
+          "host_organization": "https://openalex.org/P4310320261",
+          "host_organization_name": "American Physical Society",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320261"
+          ],
+          "host_organization_lineage_names": [
+            "American Physical Society"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Physical Review Letters",
+        "raw_type": "journal-article"
+      }
+    }
+  },
+  {
+    "doi": "10.1103/PhysRevX.5.031003",
+    "retrieved": "2026-10-09",
+    "openalex": {
+      "id": "https://openalex.org/W2147651187",
+      "title": "Geometry and Topology of Turbulence in Active Nematics",
+      "publication_year": 2015,
+      "cited_by_count": 257,
+      "ids": {
+        "openalex": "https://openalex.org/W2147651187",
+        "doi": "https://doi.org/10.1103/physrevx.5.031003",
+        "mag": "2147651187"
+      },
+      "primary_location": {
+        "id": "doi:10.1103/physrevx.5.031003",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1103/physrevx.5.031003",
+        "pdf_url": "http://link.aps.org/pdf/10.1103/PhysRevX.5.031003",
+        "source": {
+          "id": "https://openalex.org/S137042341",
+          "display_name": "Physical Review X",
+          "issn_l": "2160-3308",
+          "issn": [
+            "2160-3308"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "jufo-3",
+            "ki-jl-2",
+            "norway-2"
+          ],
+          "host_organization": "https://openalex.org/P4310320261",
+          "host_organization_name": "American Physical Society",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320261"
+          ],
+          "host_organization_lineage_names": [
+            "American Physical Society"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Physical Review X",
+        "raw_type": "journal-article"
+      }
+    },
+    "crossref": {
+      "title": [
+        "Geometry and Topology of Turbulence in Active Nematics"
+      ],
+      "author": [
+        {
+          "given": "Luca",
+          "family": "Giomi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Physical Review X"
+      ],
+      "volume": "5",
+      "issue": "3",
+      "page": null,
+      "article-number": "031003",
+      "published": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            8
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            8
+          ]
+        ]
+      },
+      "is-referenced-by-count": 162,
+      "URL": "https://doi.org/10.1103/physrevx.5.031003"
+    }
+  },
+  {
+    "doi": "10.1038/s41467-018-05666-8",
+    "retrieved": "2026-10-09",
+    "openalex": {
+      "id": "https://openalex.org/W4211209035",
+      "title": "Active nematics",
+      "publication_year": 2018,
+      "cited_by_count": 719,
+      "ids": {
+        "openalex": "https://openalex.org/W4211209035",
+        "doi": "https://doi.org/10.1038/s41467-018-05666-8",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/30131558"
+      },
+      "primary_location": {
+        "id": "doi:10.1038/s41467-018-05666-8",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/s41467-018-05666-8",
+        "pdf_url": "https://www.nature.com/articles/s41467-018-05666-8.pdf",
+        "source": {
+          "id": "https://openalex.org/S64187185",
+          "display_name": "Nature Communications",
+          "issn_l": "2041-1723",
+          "issn": [
+            "2041-1723"
+          ],
+          "is_oa": true,
+          "is_in_doaj": true,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "doaj",
+            "doyens",
+            "jufo-3",
+            "ki-jl-3",
+            "medline",
+            "norway-2"
+          ],
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https://openalex.org/licenses/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Nature Communications",
+        "raw_type": "journal-article"
+      }
+    },
+    "crossref": {
+      "title": [
+        "Active nematics"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1116-4268",
+          "authenticated-orcid": false,
+          "given": "Amin",
+          "family": "Doostmohammadi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jordi",
+          "family": "Ignés-Mullol",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Julia M.",
+          "family": "Yeomans",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Francesc",
+          "family": "Sagués",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Nature Communications"
+      ],
+      "volume": "9",
+      "issue": "1",
+      "page": null,
+      "article-number": "3246",
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            21
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            21
+          ]
+        ]
+      },
+      "is-referenced-by-count": 716,
+      "URL": "https://doi.org/10.1038/s41467-018-05666-8"
+    }
+  },
+  {
+    "doi": "10.1063/1.436761",
+    "retrieved": "2026-10-09",
+    "crossref": {
+      "title": [
+        "Brownian dynamics with hydrodynamic interactions"
+      ],
+      "author": [
+        {
+          "given": "Donald L.",
+          "family": "Ermak",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Biomedical and Environmental Research Division, Lawrence Livermore Laboratory, University of California, Livermore, California 94550"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "J. A.",
+          "family": "McCammon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Chemistry, Harvard University, Cambridge, Massachusetts 02138"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Journal of Chemical Physics"
+      ],
+      "volume": "69",
+      "issue": "4",
+      "page": "1352-1360",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1978,
+            8,
+            15
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1978,
+            8,
+            15
+          ]
+        ]
+      },
+      "published-online": null,
+      "is-referenced-by-count": 2250,
+      "URL": "https://doi.org/10.1063/1.436761"
+    },
+    "openalex": {
+      "id": "https://openalex.org/W1989925383",
+      "title": "Brownian dynamics with hydrodynamic interactions",
+      "publication_year": 1978,
+      "cited_by_count": 2487,
+      "ids": {
+        "openalex": "https://openalex.org/W1989925383",
+        "doi": "https://doi.org/10.1063/1.436761",
+        "mag": "1989925383"
+      },
+      "primary_location": {
+        "id": "doi:10.1063/1.436761",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1063/1.436761",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S77047749",
+          "display_name": "The Journal of Chemical Physics",
+          "issn_l": "0021-9606",
+          "issn": [
+            "0021-9606",
+            "1089-7690",
+            "1520-9032"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "jufo-1",
+            "ki-jl-1",
+            "medline",
+            "norway-1"
+          ],
+          "host_organization": "https://openalex.org/P4310320257",
+          "host_organization_name": "American Institute of Physics",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320257"
+          ],
+          "host_organization_lineage_names": [
+            "American Institute of Physics"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "The Journal of Chemical Physics",
+        "raw_type": "journal-article"
+      }
+    }
+  },
+  {
+    "doi": "10.1063/1.457480",
+    "retrieved": "2026-10-09",
+    "crossref": {
+      "title": [
+        "Error estimates on averages of correlated data"
+      ],
+      "author": [
+        {
+          "given": "H.",
+          "family": "Flyvbjerg",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "The Niels Bohr Institute, Blegdamsvej 17, DK-2100 Copenhagen O/, Denmark"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "H. G.",
+          "family": "Petersen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Mathematics and Computer Science, Odense University, DK-5230 Odense M, Denmark"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Journal of Chemical Physics"
+      ],
+      "volume": "91",
+      "issue": "1",
+      "page": "461-466",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            1989,
+            7,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1989,
+            7,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "is-referenced-by-count": 1465,
+      "URL": "https://doi.org/10.1063/1.457480"
+    },
+    "openalex": {
+      "id": "https://openalex.org/W3017082821",
+      "title": "Error estimates on averages of correlated data",
+      "publication_year": 1989,
+      "cited_by_count": 1521,
+      "ids": {
+        "openalex": "https://openalex.org/W3017082821",
+        "doi": "https://doi.org/10.1063/1.457480",
+        "mag": "3017082821"
+      },
+      "primary_location": {
+        "id": "doi:10.1063/1.457480",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1063/1.457480",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S77047749",
+          "display_name": "The Journal of Chemical Physics",
+          "issn_l": "0021-9606",
+          "issn": [
+            "0021-9606",
+            "1089-7690",
+            "1520-9032"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "jufo-1",
+            "ki-jl-1",
+            "medline",
+            "norway-1"
+          ],
+          "host_organization": "https://openalex.org/P4310320257",
+          "host_organization_name": "American Institute of Physics",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320257"
+          ],
+          "host_organization_lineage_names": [
+            "American Institute of Physics"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "The Journal of Chemical Physics",
+        "raw_type": "journal-article"
+      }
+    }
+  },
+  {
+    "doi": "10.1103/PhysRevE.102.012607",
+    "retrieved": "2026-10-09",
+    "crossref": {
+      "title": [
+        "Dynamics of active nematic defects on the surface of a sphere"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3496-7909",
+          "authenticated-orcid": true,
+          "given": "Yi-Heng",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5692-1595",
+          "authenticated-orcid": true,
+          "given": "Markus",
+          "family": "Deserno",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2548-3785",
+          "authenticated-orcid": true,
+          "given": "Zhan-Chun",
+          "family": "Tu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Physical Review E"
+      ],
+      "volume": "102",
+      "issue": "1",
+      "page": null,
+      "article-number": "012607",
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            17
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            17
+          ]
+        ]
+      },
+      "is-referenced-by-count": 27,
+      "URL": "https://doi.org/10.1103/physreve.102.012607"
+    },
+    "openalex": {
+      "id": "https://openalex.org/W3033969137",
+      "title": "Dynamics of active nematic defects on the surface of a sphere",
+      "publication_year": 2020,
+      "cited_by_count": 29,
+      "ids": {
+        "openalex": "https://openalex.org/W3033969137",
+        "doi": "https://doi.org/10.1103/physreve.102.012607",
+        "mag": "3033969137",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/32795046"
+      },
+      "primary_location": {
+        "id": "doi:10.1103/physreve.102.012607",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1103/physreve.102.012607",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4210235286",
+          "display_name": "Physical review. E",
+          "issn_l": "2470-0045",
+          "issn": [
+            "2470-0045",
+            "2470-0053",
+            "2470-0061"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "listed_in": [
+            "cwts-core",
+            "jufo-2",
+            "ki-jl-1",
+            "medline",
+            "norway-1"
+          ],
+          "host_organization": "https://openalex.org/P4310320261",
+          "host_organization_name": "American Physical Society",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320261"
+          ],
+          "host_organization_lineage_names": [
+            "American Physical Society"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Physical Review E",
+        "raw_type": "journal-article"
+      }
+    }
+  },
+  {
+    "doi": "10.1038/s41467-022-30128-7",
+    "retrieved": "2026-10-09",
+    "crossref": {
+      "title": [
+        "Activity-induced polar patterns of filaments gliding on a sphere"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6994-7708",
+          "authenticated-orcid": false,
+          "given": "Chiao-Peng",
+          "family": "Hsu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6883-5563",
+          "authenticated-orcid": false,
+          "given": "Alfredo",
+          "family": "Sciortino",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yu Alice",
+          "family": "de la Trobe",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4608-9544",
+          "authenticated-orcid": false,
+          "given": "Andreas R.",
+          "family": "Bausch",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Nature Communications"
+      ],
+      "volume": "13",
+      "issue": "1",
+      "page": null,
+      "article-number": "2579",
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            11
+          ]
+        ]
+      },
+      "is-referenced-by-count": 28,
+      "URL": "https://doi.org/10.1038/s41467-022-30128-7"
+    },
+    "openalex": {
+      "id": "https://openalex.org/W4280628159",
+      "title": "Activity-induced polar patterns of filaments gliding on a sphere",
+      "publication_year": 2022,
+      "cited_by_count": 27,
+      "ids": {
+        "openalex": "https://openalex.org/W4280628159",
+        "doi": "https://doi.org/10.1038/s41467-022-30128-7",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/35546549"
+      }
+    }
+  }
+]

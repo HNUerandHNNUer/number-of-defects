@@ -1,0 +1,5 @@
+﻿option batch abort
+open 10004 -timeout=30 -rawsettings Shell=/bin/bash
+put "E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain100\validation_20261010\remote_inspect.sh" /home/user/codex_bd_validation_20261010/remote_inspect.sh
+call bash /home/user/codex_bd_validation_20261010/remote_inspect.sh
+exit

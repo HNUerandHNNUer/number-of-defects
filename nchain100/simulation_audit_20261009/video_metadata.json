@@ -1,0 +1,10 @@
+{
+  "parallel": {
+    "frames": 773,
+    "fps": 10.0
+  },
+  "serial": {
+    "frames": 773,
+    "fps": 10.0
+  }
+}

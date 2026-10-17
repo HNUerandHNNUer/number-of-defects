@@ -1,0 +1,7 @@
+{
+  "new_runs": 6,
+  "charge_and_count_identity": "passed",
+  "sampling_consistency": "passed",
+  "block_mean_reconstruction": "passed",
+  "independent_seeds_per_F": 1
+}

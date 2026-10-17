@@ -1,0 +1,61 @@
+{
+  "pair_north_corot_omega": {
+    "block_mean": 7.796409170916539e-07,
+    "approx_95pct_block_interval": [
+      -1.0103141788017841e-05,
+      1.1662423622201148e-05
+    ],
+    "blocks": 10,
+    "block_duration": 50000,
+    "note": "Single-trajectory uncertainty; blocks may remain correlated."
+  },
+  "pair_south_corot_omega": {
+    "block_mean": 1.1541067816385096e-06,
+    "approx_95pct_block_interval": [
+      -3.921020357335792e-06,
+      6.229233920612812e-06
+    ],
+    "blocks": 10,
+    "block_duration": 50000,
+    "note": "Single-trajectory uncertainty; blocks may remain correlated."
+  },
+  "relative_pair_phase": {
+    "locking_magnitude": 0.8195788699592805,
+    "circular_mean_deg": 74.39704896882556
+  },
+  "late_global_polar_vector_norm_mean": 0.11629970633236918,
+  "late_axis_drift_max_deg": 51.34795148784723,
+  "late_predicted_omega": -0.000202244634801891,
+  "late_observed_omega": -0.00020244025062623143,
+  "smoothing_geometry": {
+    "0.7": {
+      "north_angle": 58.34303145939882,
+      "south_angle": 56.91460787960553,
+      "center_angle": 172.91339325540153
+    },
+    "1": {
+      "north_angle": 57.184957229510815,
+      "south_angle": 56.91400620222316,
+      "center_angle": 173.5637612628892
+    },
+    "1.5": {
+      "north_angle": 56.29489816483522,
+      "south_angle": 57.689737122493,
+      "center_angle": 173.58702390549277
+    },
+    "2": {
+      "north_angle": 57.02757501132972,
+      "south_angle": 61.48025151670722,
+      "center_angle": 173.8031857227805
+    }
+  },
+  "method_tests": {
+    "kabsch_max_error": 5.551115123125783e-16,
+    "pt_max_norm_error": 2.220446049250313e-15,
+    "pt_max_tangent_error": 7.632783294297951e-16,
+    "global_sign_flip_S_error": 0.0,
+    "global_sign_flip_P_magnitude_error": 0.0,
+    "random_chain_sign_counterfactual_P_mean": 0.3703051123780183,
+    "actual_frame750_P": 0.9034091308348488
+  }
+}

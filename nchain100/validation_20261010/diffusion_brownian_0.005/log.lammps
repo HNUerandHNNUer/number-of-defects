@@ -1,0 +1,68 @@
+LAMMPS (22 Jul 2025 - Update 1)
+units lj
+atom_style atomic
+atom_modify map array
+region b block -50 50 -50 50 -50 50
+create_box 1 b
+Created orthogonal box = (-50 -50 -50) to (50 50 50)
+  1 by 1 by 1 MPI processor grid
+create_atoms 1 random 6000 314159 b
+Created 6000 atoms
+  using lattice units in orthogonal box = (-50 -50 -50) to (50 50 50)
+  create_atoms CPU = 0.000 seconds
+mass 1 1
+pair_style zero 2.0
+pair_coeff * *
+neighbor 0.5 bin
+neigh_modify every 1 delay 0 check yes
+timestep 0.005
+thermo 2000
+write_dump all custom start.dump id xu yu zu modify sort id format float %.16g
+WARNING: Calling write_dump before a full system init (E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain100\validation_20261010\lammps-stable_22Jul2025_update1\src\write_dump.cpp:89)
+fix bd all brownian 1 246813 gamma_t 1000 rng uniform
+run 2000
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 2.5
+  ghost atom cutoff = 2.5
+  binsize = 1.25, bins = 80 80 80
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d
+      bin: standard
+Per MPI rank memory allocation (min/avg/max) = 5.773 | 5.773 | 5.773 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0              0              0              0              0            
+      2000   0.39774521     0              0              0.59651838     0.0023860735 
+Loop time of 0.329601 on 1 procs for 2000 steps with 6000 atoms
+
+Performance: 2621351.270 tau/day, 6067.943 timesteps/s, 36.408 Matom-step/s
+99.6% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 9.8e-05    | 9.8e-05    | 9.8e-05    |   0.0 |  0.03
+Neigh   | 0.003121   | 0.003121   | 0.003121   |   0.0 |  0.95
+Comm    | 0.005074   | 0.005074   | 0.005074   |   0.0 |  1.54
+Output  | 2.7e-05    | 2.7e-05    | 2.7e-05    |   0.0 |  0.01
+Modify  | 0.30467    | 0.30467    | 0.30467    |   0.0 | 92.44
+Other   |            | 0.01661    |            |       |  5.04
+
+Nlocal:           6000 ave        6000 max        6000 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:            999 ave         999 max         999 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:           1146 ave        1146 max        1146 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 1146
+Ave neighs/atom = 0.191
+Neighbor list builds = 6
+Dangerous builds = 0
+write_dump all custom end.dump id xu yu zu modify sort id format float %.16g
+Total wall time: 0:00:00

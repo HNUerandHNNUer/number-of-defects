@@ -1,0 +1,47 @@
+[
+  {
+    "backend": "cpu1",
+    "components": 18000,
+    "mean_increment": -2.9860527995541706e-05,
+    "mean_square_increment": 1.9839944081222724e-05,
+    "target": 2e-05,
+    "z_second_moment": -1.2004193908295786,
+    "max_normalized_increment": 0.9999041557315185
+  },
+  {
+    "backend": "cpu2",
+    "components": 18000,
+    "mean_increment": 3.784655659483481e-05,
+    "mean_square_increment": 2.0000274525837835e-05,
+    "target": 2e-05,
+    "z_second_moment": 0.0020589437837470756,
+    "max_normalized_increment": 0.9998703002929852
+  },
+  {
+    "backend": "cpu4",
+    "components": 18000,
+    "mean_increment": 7.024522969442636e-05,
+    "mean_square_increment": 2.0072183591297835e-05,
+    "target": 2e-05,
+    "z_second_moment": 0.541376934733748,
+    "max_normalized_increment": 0.9999672174452577
+  },
+  {
+    "backend": "kk1",
+    "components": 18000,
+    "mean_increment": -3.203557157091547e-06,
+    "mean_square_increment": 2.0160103824760702e-05,
+    "target": 2e-05,
+    "z_second_moment": 1.2007786857052547,
+    "max_normalized_increment": 0.999966650901602
+  },
+  {
+    "backend": "kk2",
+    "components": 18000,
+    "mean_increment": -9.871897205102575e-06,
+    "mean_square_increment": 2.004307410293407e-05,
+    "target": 2e-05,
+    "z_second_moment": 0.3230557720055103,
+    "max_normalized_increment": 0.9999549834916381
+  }
+]

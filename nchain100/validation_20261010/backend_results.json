@@ -1,0 +1,27 @@
+[
+  {
+    "backend": "cpu1",
+    "max_force_error_vs_local": 0.0,
+    "max_step2_position_difference": 0.0
+  },
+  {
+    "backend": "cpu2",
+    "max_force_error_vs_local": 1.0658141036401503e-14,
+    "max_step2_position_difference": 0.0
+  },
+  {
+    "backend": "cpu4",
+    "max_force_error_vs_local": 1.0658141036401503e-14,
+    "max_step2_position_difference": 0.0
+  },
+  {
+    "backend": "kk1",
+    "max_force_error_vs_local": 2.0768942121662803e-11,
+    "max_step2_position_difference": 1.0658141036401503e-14
+  },
+  {
+    "backend": "kk2",
+    "max_force_error_vs_local": 2.0768942121662803e-11,
+    "max_step2_position_difference": 1.0658141036401503e-14
+  }
+]

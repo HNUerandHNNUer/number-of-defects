@@ -1,0 +1,137 @@
+{
+  "title": [
+    "Collective dynamics of self-propelled semiflexible filaments"
+  ],
+  "author": [
+    {
+      "given": "\u00d6zer",
+      "family": "Duman",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Theoretical Soft Matter and Biophysics"
+        },
+        {
+          "name": "Institute of Complex Systems and Institute for Advanced Simulations"
+        },
+        {
+          "name": "Forchungszentrum J\u00fclich GmbH"
+        },
+        {
+          "name": "J\u00fclich"
+        },
+        {
+          "name": "Germany"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Rolf E.",
+      "family": "Isele-Holder",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Theoretical Soft Matter and Biophysics"
+        },
+        {
+          "name": "Institute of Complex Systems and Institute for Advanced Simulations"
+        },
+        {
+          "name": "Forchungszentrum J\u00fclich GmbH"
+        },
+        {
+          "name": "J\u00fclich"
+        },
+        {
+          "name": "Germany"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-7300-0923",
+      "authenticated-orcid": false,
+      "given": "Jens",
+      "family": "Elgeti",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Theoretical Soft Matter and Biophysics"
+        },
+        {
+          "name": "Institute of Complex Systems and Institute for Advanced Simulations"
+        },
+        {
+          "name": "Forchungszentrum J\u00fclich GmbH"
+        },
+        {
+          "name": "J\u00fclich"
+        },
+        {
+          "name": "Germany"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-8904-0986",
+      "authenticated-orcid": false,
+      "given": "Gerhard",
+      "family": "Gompper",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Theoretical Soft Matter and Biophysics"
+        },
+        {
+          "name": "Institute of Complex Systems and Institute for Advanced Simulations"
+        },
+        {
+          "name": "Forchungszentrum J\u00fclich GmbH"
+        },
+        {
+          "name": "J\u00fclich"
+        },
+        {
+          "name": "Germany"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "container-title": [
+    "Soft Matter"
+  ],
+  "published": {
+    "date-parts": [
+      [
+        2018
+      ]
+    ]
+  },
+  "volume": "14",
+  "issue": "22",
+  "page": "4483-4494",
+  "is-referenced-by-count": 100
+}

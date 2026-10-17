@@ -1,0 +1,105 @@
+LAMMPS (22 Jul 2025 - Update 1)
+units lj
+atom_style molecular
+atom_modify map array
+boundary p p p
+read_data sample.data
+Reading data file ...
+  orthogonal box = (-18.866342 -18.866342 -18.866342) to (18.866342 18.866342 18.866342)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  6000 atoms
+  scanning bonds ...
+  1 = max bonds/atom
+  scanning angles ...
+  1 = max angles/atom
+  orthogonal box = (-18.866342 -18.866342 -18.866342) to (18.866342 18.866342 18.866342)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  5800 bonds
+  reading angles ...
+  5600 angles
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     2 = max # of 1-2 neighbors
+     2 = max # of 1-3 neighbors
+     4 = max # of 1-4 neighbors
+     6 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.044 seconds
+comm_modify cutoff 3.0
+neighbor 0.5 bin
+neigh_modify every 1 delay 0 check yes
+special_bonds fene
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        1        1       
+  special bond factors coul:  0        1        1       
+     2 = max # of 1-2 neighbors
+     6 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+pair_style zero 2
+pair_coeff * *
+
+bond_style zero
+bond_coeff *
+angle_style zero
+angle_coeff *
+thermo 100000
+thermo_style custom step pe
+timestep 0.005
+fix bd all bd/sphere 1000 1 0 123456 mchain 30
+run 4000
+WARNING: No fixes with time integration, atoms won't move
+For more information see https://docs.lammps.org/err0028 (E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain100\validation_20261010\lammps-stable_22Jul2025_update1\src\verlet.cpp:60)
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 2.5
+  ghost atom cutoff = 3
+  binsize = 1.25, bins = 31 31 31
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+WARNING: Inconsistent image flags
+For more information see https://docs.lammps.org/err0027 (E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain100\validation_20261010\lammps-stable_22Jul2025_update1\src\domain.cpp:1052)
+WARNING: Bond/angle/dihedral extent > half of periodic box length (E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain100\validation_20261010\lammps-stable_22Jul2025_update1\src\domain.cpp:1174)
+Per MPI rank memory allocation (min/avg/max) = 7.398 | 7.398 | 7.398 Mbytes
+   Step         PotEng    
+         0   0            
+      4000   0            
+WARNING: Bond/angle/dihedral extent > half of periodic box length (E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain100\validation_20261010\lammps-stable_22Jul2025_update1\src\domain.cpp:1174)
+Loop time of 1.78208 on 1 procs for 4000 steps with 6000 atoms
+
+Performance: 969651.806 tau/day, 2244.564 timesteps/s, 13.467 Matom-step/s
+100.0% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.000224   | 0.000224   | 0.000224   |   0.0 |  0.01
+Bond    | 0.000189   | 0.000189   | 0.000189   |   0.0 |  0.01
+Neigh   | 0.024557   | 0.024557   | 0.024557   |   0.0 |  1.38
+Comm    | 0.006487   | 0.006487   | 0.006487   |   0.0 |  0.36
+Output  | 6e-06      | 6e-06      | 6e-06      |   0.0 |  0.00
+Modify  | 1.718      | 1.718      | 1.718      |   0.0 | 96.40
+Other   |            | 0.03264    |            |       |  1.83
+
+Nlocal:           6000 ave        6000 max        6000 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:            554 ave         554 max         554 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:         102122 ave      102122 max      102122 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 102122
+Ave neighs/atom = 17.020333
+Ave special neighs/atom = 1.9333333
+Neighbor list builds = 11
+Dangerous builds = 0
+write_dump all custom last.dump id x y z modify sort id format float %.16g
+Total wall time: 0:00:01

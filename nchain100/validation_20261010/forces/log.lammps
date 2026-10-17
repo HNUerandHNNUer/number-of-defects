@@ -1,0 +1,138 @@
+LAMMPS (22 Jul 2025 - Update 1)
+units lj
+atom_style molecular
+atom_modify map array
+boundary p p p
+read_data sample.data
+Reading data file ...
+  orthogonal box = (-18.866342 -18.866342 -18.866342) to (18.866342 18.866342 18.866342)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3000 atoms
+  scanning bonds ...
+  1 = max bonds/atom
+  scanning angles ...
+  1 = max angles/atom
+  orthogonal box = (-18.866342 -18.866342 -18.866342) to (18.866342 18.866342 18.866342)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  2900 bonds
+  reading angles ...
+  2800 angles
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     2 = max # of 1-2 neighbors
+     2 = max # of 1-3 neighbors
+     4 = max # of 1-4 neighbors
+     6 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_data CPU = 0.022 seconds
+comm_modify cutoff 3.0
+neighbor 0.5 bin
+neigh_modify every 1 delay 0 check yes
+special_bonds fene
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        1        1       
+  special bond factors coul:  0        1        1       
+     2 = max # of 1-2 neighbors
+     6 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+pair_style lj/cut 1.122462048309373
+pair_coeff 1 1 1 1
+pair_modify shift yes
+bond_style fene
+bond_coeff 1 30 1.5 1 1
+angle_style cosine
+angle_coeff 1 30
+thermo 100000
+thermo_style custom step pe
+timestep 0.01
+fix bd all bd/sphere 1000 0 25 123456 mchain 30
+run 1
+WARNING: No fixes with time integration, atoms won't move
+For more information see https://docs.lammps.org/err0028 (E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain100\validation_20261010\lammps-stable_22Jul2025_update1\src\verlet.cpp:60)
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 1.622462
+  ghost atom cutoff = 3
+  binsize = 0.81123102, bins = 47 47 47
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Per MPI rank memory allocation (min/avg/max) = 7.354 | 7.354 | 7.354 Mbytes
+   Step         PotEng    
+         0   19.931924    
+         1   19.931924    
+Loop time of 0.000411 on 1 procs for 1 steps with 3000 atoms
+
+Performance: 2102189.781 tau/day, 2433.090 timesteps/s, 7.299 Matom-step/s
+0.0% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 6.5e-05    | 6.5e-05    | 6.5e-05    |   0.0 | 15.82
+Bond    | 0.000133   | 0.000133   | 0.000133   |   0.0 | 32.36
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 1e-06      | 1e-06      | 1e-06      |   0.0 |  0.24
+Output  | 2e-06      | 2e-06      | 2e-06      |   0.0 |  0.49
+Modify  | 0.000206   | 0.000206   | 0.000206   |   0.0 | 50.12
+Other   |            | 4e-06      |            |       |  0.97
+
+Nlocal:           3000 ave        3000 max        3000 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:            304 ave         304 max         304 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:           6446 ave        6446 max        6446 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 6446
+Ave neighs/atom = 2.1486667
+Ave special neighs/atom = 1.9333333
+Neighbor list builds = 0
+Dangerous builds = 0
+write_dump all custom forces.dump id x y z fx fy fz modify sort id format float %.16g
+run 1
+WARNING: No fixes with time integration, atoms won't move
+For more information see https://docs.lammps.org/err0028 (E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain100\validation_20261010\lammps-stable_22Jul2025_update1\src\verlet.cpp:60)
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Per MPI rank memory allocation (min/avg/max) = 7.354 | 7.354 | 7.354 Mbytes
+   Step         PotEng    
+         1   19.931924    
+         2   19.931942    
+Loop time of 0.000411 on 1 procs for 1 steps with 3000 atoms
+
+Performance: 2102189.781 tau/day, 2433.090 timesteps/s, 7.299 Matom-step/s
+0.0% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 6.5e-05    | 6.5e-05    | 6.5e-05    |   0.0 | 15.82
+Bond    | 0.000133   | 0.000133   | 0.000133   |   0.0 | 32.36
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 1e-06      | 1e-06      | 1e-06      |   0.0 |  0.24
+Output  | 1e-06      | 1e-06      | 1e-06      |   0.0 |  0.24
+Modify  | 0.000206   | 0.000206   | 0.000206   |   0.0 | 50.12
+Other   |            | 5e-06      |            |       |  1.22
+
+Nlocal:           3000 ave        3000 max        3000 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:            304 ave         304 max         304 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:           6446 ave        6446 max        6446 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 6446
+Ave neighs/atom = 2.1486667
+Ave special neighs/atom = 1.9333333
+Neighbor list builds = 0
+Dangerous builds = 0
+write_dump all custom after2.dump id x y z modify sort id format float %.16g
+Total wall time: 0:00:00

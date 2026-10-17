@@ -1,0 +1,147 @@
+LAMMPS (22 Jul 2025 - Update 1)
+KOKKOS mode with Kokkos version 4.6.2 is enabled
+  will use up to 1 GPU(s) per node
+WARNING: When using a single thread, the Kokkos Serial backend (i.e. Makefile.kokkos_mpi_only) gives better performance than the OpenMP backend (src/KOKKOS/kokkos.cpp:221)
+  using 1 OpenMP thread(s) per MPI task
+package kokkos
+units lj
+atom_style molecular
+atom_modify map array
+boundary p p p
+read_data sample.data
+Reading data file ...
+  orthogonal box = (-18.866342 -18.866342 -18.866342) to (18.866342 18.866342 18.866342)
+  1 by 1 by 2 MPI processor grid
+  reading atoms ...
+  3000 atoms
+  scanning bonds ...
+  2 = max bonds/atom
+  scanning angles ...
+  3 = max angles/atom
+  orthogonal box = (-18.866342 -18.866342 -18.866342) to (18.866342 18.866342 18.866342)
+  1 by 1 by 2 MPI processor grid
+  reading bonds ...
+  2900 bonds
+  reading angles ...
+  2800 angles
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     2 = max # of 1-2 neighbors
+     2 = max # of 1-3 neighbors
+     4 = max # of 1-4 neighbors
+     6 = max # of special neighbors
+  special bonds CPU = 0.011 seconds
+  read_data CPU = 0.065 seconds
+comm_modify cutoff 3.0
+neighbor 0.5 bin
+neigh_modify every 1 delay 0 check yes
+special_bonds fene
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        1        1       
+  special bond factors coul:  0        1        1       
+     2 = max # of 1-2 neighbors
+     6 = max # of special neighbors
+  special bonds CPU = 0.003 seconds
+pair_style lj/cut 1.122462048309373
+pair_coeff 1 1 1 1
+pair_modify shift yes
+bond_style fene
+bond_coeff 1 30 1.5 1 1
+angle_style cosine
+angle_coeff 1 30
+thermo 100000
+thermo_style custom step pe
+timestep 0.01
+fix bd all bd/sphere 1000 0 25 123456 mchain 30
+run 1
+WARNING: No fixes with time integration, atoms won't move
+For more information see https://docs.lammps.org/err0028 (src/verlet.cpp:60)
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 1.622462
+  ghost atom cutoff = 3
+  binsize = 1.622462, bins = 24 24 24
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut/kk, perpetual
+      attributes: full, newton off, kokkos_device
+      pair build: full/bin/kk/device
+      stencil: full/bin/3d
+      bin: kk/device
+Per MPI rank memory allocation (min/avg/max) = 7.505 | 7.505 | 7.506 Mbytes
+   Step         PotEng    
+         0   19.931924    
+         1   19.931924    
+Loop time of 0.0102834 on 2 procs for 1 steps with 3000 atoms
+
+Performance: 84018.778 tau/day, 97.244 timesteps/s, 291.732 katom-step/s
+100.0% CPU use with 2 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.0012032  | 0.0012158  | 0.0012283  |   0.0 | 11.82
+Bond    | 0.00084826 | 0.00085282 | 0.00085738 |   0.0 |  8.29
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0061583  | 0.0061866  | 0.0062149  |   0.0 | 60.16
+Output  | 7.785e-06  | 4.8109e-05 | 8.8433e-05 |   0.0 |  0.47
+Modify  | 0.0006543  | 0.00065461 | 0.00065493 |   0.0 |  6.37
+Other   |            | 0.001326   |            |       | 12.89
+
+Nlocal:           1500 ave        1663 max        1337 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Nghost:          544.5 ave         556 max         533 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Neighs:              0 ave           0 max           0 min
+Histogram: 2 0 0 0 0 0 0 0 0 0
+FullNghs:         6446 ave        7417 max        5475 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+
+Total # of neighbors = 12892
+Ave neighs/atom = 4.2973333
+Ave special neighs/atom = 1.9333333
+Neighbor list builds = 0
+Dangerous builds = 0
+write_dump all custom forces.dump id x y z fx fy fz modify sort id format float %.16g
+run 1
+WARNING: No fixes with time integration, atoms won't move
+For more information see https://docs.lammps.org/err0028 (src/verlet.cpp:60)
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Per MPI rank memory allocation (min/avg/max) = 7.505 | 7.505 | 7.506 Mbytes
+   Step         PotEng    
+         1   19.931924    
+         2   19.931942    
+Loop time of 0.00426785 on 2 procs for 1 steps with 3000 atoms
+
+Performance: 202443.830 tau/day, 234.310 timesteps/s, 702.930 katom-step/s
+100.2% CPU use with 2 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.00036983 | 0.00038127 | 0.0003927  |   0.0 |  8.93
+Bond    | 0.00069754 | 0.00070097 | 0.00070439 |   0.0 | 16.42
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0018256  | 0.0018538  | 0.001882   |   0.1 | 43.44
+Output  | 6.146e-06  | 4.2383e-05 | 7.8619e-05 |   0.0 |  0.99
+Modify  | 1.2574e-05 | 1.3045e-05 | 1.3515e-05 |   0.0 |  0.31
+Other   |            | 0.001276   |            |       | 29.91
+
+Nlocal:           1500 ave        1663 max        1337 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Nghost:          544.5 ave         556 max         533 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Neighs:              0 ave           0 max           0 min
+Histogram: 2 0 0 0 0 0 0 0 0 0
+FullNghs:         6446 ave        7417 max        5475 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+
+Total # of neighbors = 12892
+Ave neighs/atom = 4.2973333
+Ave special neighs/atom = 1.9333333
+Neighbor list builds = 0
+Dangerous builds = 0
+write_dump all custom after2.dump id x y z modify sort id format float %.16g
+Total wall time: 0:00:00

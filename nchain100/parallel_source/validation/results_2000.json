@@ -1,0 +1,33 @@
+{
+  "steps": 2000,
+  "seed": 123456,
+  "compiler": "GNU Fortran (GCC) 16.2.0",
+  "results": {
+    "reference": {
+      "seconds": 1.053423,
+      "sha256": "7137e20d1eaf55eaa894d27a86f2cea9e4f6bef7b1a25a8f0db8c0acb5528c64"
+    },
+    "omp_1": {
+      "seconds": 1.3937165,
+      "sha256": "7137e20d1eaf55eaa894d27a86f2cea9e4f6bef7b1a25a8f0db8c0acb5528c64",
+      "max_coordinate_error_vs_original": 0.0,
+      "speedup_vs_original": 0.7558373600369946
+    },
+    "omp_2": {
+      "seconds": 0.9696597999999996,
+      "sha256": "7137e20d1eaf55eaa894d27a86f2cea9e4f6bef7b1a25a8f0db8c0acb5528c64",
+      "max_coordinate_error_vs_original": 0.0,
+      "speedup_vs_original": 1.0863841112109633
+    },
+    "omp_4": {
+      "seconds": 0.7949719999999996,
+      "sha256": "7137e20d1eaf55eaa894d27a86f2cea9e4f6bef7b1a25a8f0db8c0acb5528c64",
+      "max_coordinate_error_vs_original": 0.0,
+      "speedup_vs_original": 1.3251070477953948
+    },
+    "debug": {
+      "seconds": 1.4924609000000002,
+      "sha256": "3ca4c42b8efb679abeecf160150cd97254d15c482fab48ec563f1c65b5078ef8"
+    }
+  }
+}

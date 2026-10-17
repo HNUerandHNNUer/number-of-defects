@@ -1,0 +1,30 @@
+# 原始数据（体积过大，不入库）
+*.xyz
+*.avi
+*.mp4
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.npz
+*.gz
+*.zip
+*.opju
+
+# 二进制/编译产物
+*.exe
+*.dll
+*.pyd
+*.a
+*.o
+*.obj
+*.so
+*.mod
+*.pyc
+__pycache__/
+build/
+*.sqlite3
+*.lock
+
+# 大日志
+*.log

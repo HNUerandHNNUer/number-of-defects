@@ -1,0 +1,544 @@
+[
+  {
+    "doi": "10.1126/science.1254784",
+    "crossref": {
+      "title": [
+        "Topology and dynamics of active nematic vesicles"
+      ],
+      "authors": [
+        {
+          "given": "Felix C.",
+          "family": "Keber",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Physics, Technische Universität München, 85748 Garching, Germany."
+            },
+            {
+              "name": "Institute for Advanced Study, Technische Universität München, 85748 Garching, Germany."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Etienne",
+          "family": "Loiseau",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Physics, Technische Universität München, 85748 Garching, Germany."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tim",
+          "family": "Sanchez",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Physics, Brandeis University, Waltham, MA 02474, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Stephen J.",
+          "family": "DeCamp",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Physics, Brandeis University, Waltham, MA 02474, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Luca",
+          "family": "Giomi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "SISSA International School for Advanced Studies, Via Bonomea 265, 34136 Trieste, Italy."
+            },
+            {
+              "name": "Instituut-Lorentz for Theoretical Physics, Leiden University, 2333 CA Leiden, Netherlands."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mark J.",
+          "family": "Bowick",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Physics Department and Syracuse Biomaterials Institute, Syracuse University, Syracuse, NY 13244, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "M. Cristina",
+          "family": "Marchetti",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Physics Department and Syracuse Biomaterials Institute, Syracuse University, Syracuse, NY 13244, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zvonimir",
+          "family": "Dogic",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute for Advanced Study, Technische Universität München, 85748 Garching, Germany."
+            },
+            {
+              "name": "Department of Physics, Brandeis University, Waltham, MA 02474, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andreas R.",
+          "family": "Bausch",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Physics, Technische Universität München, 85748 Garching, Germany."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Science"
+      ],
+      "year": {
+        "date-parts": [
+          [
+            2014,
+            9,
+            5
+          ]
+        ]
+      },
+      "volume": "345",
+      "issue": "6201",
+      "pages": "1135-1139",
+      "article_number": null,
+      "crossref_citations": 561
+    },
+    "openalex": {
+      "id": "https://openalex.org/W1997445226",
+      "title": "Topology and dynamics of active nematic vesicles",
+      "cited_by_count": 576,
+      "publication_date": "2014-09-04",
+      "authors": [
+        "Felix C. Keber",
+        "Étienne Loiseau",
+        "Tim H. Sanchez",
+        "Stephen J. DeCamp",
+        "Luca Giomi",
+        "Mark J. Bowick",
+        "M. Cristina Marchetti",
+        "Zvonimir Dogic",
+        "Andreas R. Bausch"
+      ]
+    }
+  },
+  {
+    "doi": "10.1103/PhysRevE.97.042605",
+    "crossref": {
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    "openalex": {
+      "id": "https://openalex.org/W2614810344",
+      "title": "Dynamical patterns in nematic active matter on a sphere",
+      "cited_by_count": 64,
+      "publication_date": "2018-04-16",
+      "authors": [
+        "Silke Henkes",
+        "M. Cristina Marchetti",
+        "Rastko Sknepnek"
+      ]
+    }
+  },
+  {
+    "doi": "10.1088/1367-2630/aa89aa",
+    "crossref": {
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    "openalex": {
+      "id": "https://openalex.org/W2523776617",
+      "title": "Vortex formation and dynamics of defects in active nematic shells",
+      "cited_by_count": 46,
+      "publication_date": "2017-09-01",
+      "authors": [
+        "Diana Khoromskaia",
+        "Gareth P. Alexander"
+      ]
+    }
+  },
+  {
+    "doi": "10.1039/D0SM00166J",
+    "crossref": {
+      "title": [
+        "A theoretical phase diagram for an active nematic on a spherical surface"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6898-4021",
+          "authenticated-orcid": false,
+          "given": "Aidan T.",
+          "family": "Brown",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "SUPA"
+            },
+            {
+              "name": "School of Physics & Astronomy"
+            },
+            {
+              "name": "The University of Edinburgh"
+            },
+            {
+              "name": "Edinburgh EH9 3JZ"
+            },
+            {
+              "name": "UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Soft Matter"
+      ],
+      "year": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "volume": "16",
+      "issue": "19",
+      "pages": "4682-4691",
+      "article_number": null,
+      "crossref_citations": 11
+    },
+    "openalex": {
+      "id": "https://openalex.org/W3023900592",
+      "title": "A theoretical phase diagram for an active nematic on a spherical surface",
+      "cited_by_count": 11,
+      "publication_date": "2020-01-01",
+      "authors": [
+        "Aidan T. Brown"
+      ]
+    }
+  },
+  {
+    "doi": "10.1038/ncomms13483",
+    "crossref": {
+      "title": [
+        "Dynamic structure of active nematic shells"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2346-345X",
+          "authenticated-orcid": false,
+          "given": "Rui",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4618-9318",
+          "authenticated-orcid": false,
+          "given": "Ye",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mohammad",
+          "family": "Rahimi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Juan J.",
+          "family": "de Pablo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Nature Communications"
+      ],
+      "year": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            21
+          ]
+        ]
+      },
+      "volume": "7",
+      "issue": "1",
+      "pages": null,
+      "article_number": "13483",
+      "crossref_citations": 80
+    },
+    "openalex": {
+      "id": "https://openalex.org/W2556241506",
+      "title": "Dynamic structure of active nematic shells",
+      "cited_by_count": 87,
+      "publication_date": "2016-11-21",
+      "authors": [
+        "Rui Zhang",
+        "Ye Zhou",
+        "Mohammad Rahimi",
+        "Juan Pablo"
+      ]
+    }
+  },
+  {
+    "doi": "10.1103/PhysRevX.5.031003",
+    "crossref": {
+      "title": [
+        "Geometry and Topology of Turbulence in Active Nematics"
+      ],
+      "authors": [
+        {
+          "given": "Luca",
+          "family": "Giomi",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Physical Review X"
+      ],
+      "year": {
+        "date-parts": [
+          [
+            2015,
+            7,
+            8
+          ]
+        ]
+      },
+      "volume": "5",
+      "issue": "3",
+      "pages": null,
+      "article_number": "031003",
+      "crossref_citations": 162
+    },
+    "openalex": {
+      "id": "https://openalex.org/W2147651187",
+      "title": "Geometry and Topology of Turbulence in Active Nematics",
+      "cited_by_count": 251,
+      "publication_date": "2015-07-08",
+      "authors": [
+        "Luca Giomi"
+      ]
+    }
+  },
+  {
+    "doi": "10.1038/s41467-022-30128-7",
+    "crossref": {
+      "title": [
+        "Activity-induced polar patterns of filaments gliding on a sphere"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-6994-7708",
+          "authenticated-orcid": false,
+          "given": "Chiao-Peng",
+          "family": "Hsu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6883-5563",
+          "authenticated-orcid": false,
+          "given": "Alfredo",
+          "family": "Sciortino",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Yu Alice",
+          "family": "de la Trobe",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4608-9544",
+          "authenticated-orcid": false,
+          "given": "Andreas R.",
+          "family": "Bausch",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Nature Communications"
+      ],
+      "year": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            11
+          ]
+        ]
+      },
+      "volume": "13",
+      "issue": "1",
+      "pages": null,
+      "article_number": "2579",
+      "crossref_citations": 28
+    },
+    "openalex": {
+      "id": "https://openalex.org/W4280628159",
+      "title": "Activity-induced polar patterns of filaments gliding on a sphere",
+      "cited_by_count": 27,
+      "publication_date": "2022-05-11",
+      "authors": [
+        "Chiao-Peng Hsu",
+        "Alfredo Sciortino",
+        "Yu Alice de la Trobe",
+        "Andreas R. Bausch"
+      ]
+    }
+  },
+  {
+    "doi": "10.1103/PhysRevE.91.022306",
+    "crossref": {
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    "openalex": {
+      "id": "https://openalex.org/W2034389899",
+      "title": "Active swarms on a sphere",
+      "cited_by_count": 86,
+      "publication_date": "2015-02-17",
+      "authors": [
+        "Rastko Sknepnek",
+        "Silke Henkes"
+      ]
+    }
+  }
+]

@@ -1,0 +1,16 @@
+# input: E:\1\7.9.2025\3000\phi_0.7\nchain_50\nchain50_2.28\F_3\results\defect_results.dat
+# status: 固定丢弃前25%帧，仅统计后75%帧
+# 固定统计时间步: 250000000 — 1000000000
+# 总帧数: 10001；舍弃前25%: 2500；统计后75%: 7501
+# mean为分别四舍五入后的整数；raw_mean保留原始均值
+# SD使用原始帧和未取整均值计算，ddof=1；不是SEM
+# 独立取整后的总数可能不等于取整后的正、负缺陷数之和
+
+total defect 13 ± 8.360486
++1/2 defect 9 ± 4.180243
+-1/2 defect 5 ± 4.180243
+
+# 未取整均值（供比较与核查）
+total defect raw_mean=13.136648
++1/2 defect raw_mean=8.568324
+-1/2 defect raw_mean=4.568324

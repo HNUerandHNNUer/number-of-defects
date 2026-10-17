@@ -1,0 +1,101 @@
+# -*- coding: utf-8 -*-
+from pathlib import Path
+import csv,json,shutil
+ROOT=Path(__file__).resolve().parent;OUT=ROOT/'activity_analysis_20261013'
+with (OUT/'full_coordinate_summary.csv').open(encoding='utf-8-sig') as f:rows=list(csv.DictReader(f))
+table='|F|局部 P|局部 S|跨链极性相关|整体旋转解释率|对内角 N/S|\n|---:|---:|---:|---:|---:|---:|\n'
+for r in rows:
+    table+='|{}|{:.3f}|{:.3f}|{:.3f}|{:.1f}%|{:.1f}° / {:.1f}°|\n'.format(r['F'],*[float(r[k]) for k in ['P_local_area_mean','S_local_area_mean','interchain_polar_correlation']],100*float(r['rigid_rotation_fraction']),float(r['north_pair_angle_deg']),float(r['south_pair_angle_deg']))
+report=r'''# 完整轨迹更新：相似缺陷纹理下的单向环流、反向环流与极性重组
+
+日期：2026-10-13。本报告已用用户补充路径下的六组各 1001 帧三维轨迹更新，取代此前只凭计数和视频的初步解释。共重新处理 6006 帧，并与此前压缩制备 F=1 的 1001 帧结果比较。输入、轨迹和源码未修改，未运行新模拟。D1=full_coordinate_summary.csv；D2=chain_motion_summary.json 和 chain_motion_timeseries.csv；D3=state_conditional_metrics.csv；D4=event_smoothing_every_frame.csv；D5=各 F 子目录的逐帧结果；D6=此前 F=1 全轨迹结果。[依据：本次后处理；文献：不适用]
+
+**核心结论：相似的两极四缺陷纹理并不代表同一种运动状态。F=1、2、9 的晚期以同向极性环流为主；F=4 出现稳定的 6 条链与 4 条链反向环流；F=6、7 有极性和集体环流明显下降、随后恢复或重新分配的过程；F=8 存在两条与多数链相反的取向环流。应研究“向列纹理与极性流动的分离及重新耦合”，不能再把所有视频概括为同一个整体刚体自转态。** 这些是当前各单次轨迹的状态描述，不是已建立的稳态相图。[依据：D1–D3；参考文献：R2、R7、R9]
+
+## 1. 完整数据比较
+
+以下统一统计 t=500000–1000000 LJ，共 501 帧；P、S 用 h=1.5 珠径的球面平行输运高斯粗粒化；整体旋转解释率为相邻保存帧 Δt=1000 的 Kabsch 拟合结果；配对角只统计原始识别恰好四个 +1/2 的帧。表中 F=1 是 gpu2/compress_defect_out 的压缩制备轨迹，不是 video/results_evolution/1 的旧初态轨迹，两者不能混用。[依据：D1、D5、D6]
+
+TABLE
+
+F=4 最有说明力：S≈0.814 仍高，局部 P≈0.407、跨链极性相关仅约 0.100，整体旋转只能解释 7.43% 的粒子运动。t≥600000 后，6 条链相对多数方向为正、4 条为负，并且每个保存间隔的逐链位移拟合都能同时看到两个运动方向，方向与链的有符号环流一致。该时段最大的逐链主值旋转角约 111.5°；在本观测尺度与推进速度量级下，支持真实的反向环流，不能用“只是整体旋转稍慢”概括。[依据：D1、D2；图 08、09]
+
+F=2 的 10 条链在晚期同向排列，P≈0.926，整体旋转解释率 96.23%；F=9 同样具有强同向取向环流，P≈0.916，整体运动解释率 94.57%。F=8 则有两条链相对多数方向取向相反。对于 F≥6 的极区快速链，1000 LJ 帧间隔可能使单链旋转超过半周而发生主值混叠，因此不能凭逐链有限间隔旋转的正负号断言运动反转；高 F 的方向分类主要来自已知推进方向与有符号链环流，而非混叠速度。[依据：D1、D2；文献：不适用]
+
+各组原始四缺陷条件下的对内角约 28–59°，中心夹角约 169–173°，因此存在两组近对跖配对，但没有证明两个半缺陷核真正融合成单核 +1。不同 F 的平均配对角也并非完全一样。条件取样排除了额外缺陷时段，不能把这些数当作所有帧的几何描述。[依据：D1、各组 defect_pair_geometry.csv；参考文献：R2、R4]
+
+## 2. F=6、7 的异常到底是什么
+
+完整轨迹确认计数异常伴随真实的材料场变化。F=6 晚期在 N_def≥8 的 91 帧中，平均 P≈0.572、环流幅值≈0.335、整体旋转解释率≈28.7%；对应四缺陷帧分别约 0.851、0.697、84.9%。F=7 的 N_def≥8 帧对应 P≈0.451、环流≈0.263、解释率≈19.7%，四缺陷帧则约 0.796、0.676、88.9%。这是条件相关，尚未证明缺陷导致极性下降或相反的因果方向。[依据：D3；图 07]
+
+极性 P 和环流的下降明显大于平均向列序 S 的下降：F=6 的两类帧 S 约为 0.756 与 0.818；F=7 约为 0.762 与 0.812。因此过程更像在仍有较强向列排列的背景下，链的极性/运动组织发生重组，不是整个系统完全失去向列序。图 08 以瞬时总环流方向规定轴正向，避免把无头纹理轴的共同符号翻转误判为所有链一起反转。[依据：D2、D3；参考文献：R7、R9]
+
+但原始缺陷数的上升有明显尺度依赖。对异常窗口逐帧重算 h=0、1、1.5、2 共 852 个帧/尺度组合；另对全程每十帧抽样检查。F=6 后半段抽样在 h=1.5、2 下四缺陷比例分别约 86.3%、96.1%，原始全帧比例为 65.9%；F=7 在 h=1.5、2 下均约 98.0%，原始全帧为 84.4%。这些比较的抽样频率不同，精确逐帧事件结果见 D4。结论是“真实极性重组伴随尺度敏感的缺陷标记增加”，不能直接说已观察到 22 个稳健的大尺度缺陷或活性湍流；粗粒化也可能抹去真实的小尺度缺陷，不能反向断言全部都是伪影。[依据：D4、smoothing_across_F.csv；参考文献：R6 提供湍流比较背景，但不是本数据满足湍流判据的证据]
+
+## 3. 机制为什么现在更清楚了
+
+**第一层是向列几何：Q 不区分一条链沿哪个方向推进。** 链局部方向 d 反转为 −d 时，Q∝dd−I_t/2 不变，而极性 p 改号。因此大量链可以沿同一类周向轨道顺、逆向运动，仍保留相似的 Q 场和缺陷拓扑。这直接解释了“视频看着相似、四缺陷数量相同，但内部动力学不同”。F=4 与 F=2 的对照给出了本体系的具体证据。[依据：Q/p 定义与 D1、D2；参考文献：R9 的向列通道集体态作为微观参照，不能与本球面状态直接等同]
+
+**第二层是极性组织和力矩：同向链越多，推进力矩越能相加；反向环流则抵消部分总力矩。** 对所给干式过阻尼珠模型，A=Σ_all(r_i²I−r_i r_i^T)，τ_a=FΣ_active(r_i×t_i)，在内部总力矩抵消、径向壁力不提供力矩、噪声平均为零且钳制可忽略的条件下，γAΩ≈τ_a 描述瞬时旋转投影。F=1 平均误差约 0.10%，F=2 约 0.016%，提供跨两个 F 的直接检验；F=9 的有限间隔全局拟合与预测平均值相差约 1.5%。[依据：D1、D6；文献：该式来自所给模型的力矩平衡推导]
+
+这一关系不能被误解为所有粒子必须刚性共转。F=4 的整体解释率极低，A^−1τ_a 只代表一种旋转投影，不能替代两支反向运动；其有限间隔 Kabsch 平均值与瞬时力矩预测相差约 32%，F=8 约 38%。两者都含反向分量，1000 LJ 内的大位移也使有限旋转拟合不同于瞬时线性速度投影。应缩短输出间隔后再检验，不能将这种差异直接称为力矩守恒失效。[依据：D1、D2；文献：本模型/观测算子的区别]
+
+若近似固定 R 和单一旋转轴，可写 Ω≈[F/(γR)]G，G=Σ_active[sinθ(t·e_phi)]/Σ_all sin²θ。**F 控制推进强度，G 表示当前的极性和几何组织，两者共同控制净旋转。** 这比一律假设 Ω∝F 更完善：只有同一组织分支内 G 近似不变才预期线性。在反向环流态，应同时报告各方向的链数、速度与力矩，而不是只报一个 Ω。[依据：模型近似推导与 D1、D2]
+
+**第三层是状态选择与切换，仍需因果检验。** 当前球半径约 5.175、每链轮廓约 27.7–27.8，即 L/R≈5.35–5.38，只有 10 条链。长链、弯曲代价、排斥和小球面的组合可能稳定周向纹理，而极性方向组合和局部重排决定是同向环流还是反向流。这是与数据一致的机制假说；本次尚未独立改变链长、刚度或极性规则，不能声称已经证明长链是选择两极结构的唯一原因。[依据：输入参数、D1–D3；参考文献：R2、R9]
+
+## 4. 最小验证方案：从机制框架走到因果结论
+
+|优先级|具体对照|关键预测与用途|
+|---|---|---|
+|1|取 F=4 稳定帧，同坐标分支：原驱动、全链推进符号反转、随机逐链符号、F=0；保持链拓扑和初始 Q|短时 Q 几乎相同，但力矩/运动方向随驱动改变；直接区分纹理与流动。F=0 不要求几何立即消失|
+|1|F=2、4、6、7、8、9 各至少 5 个种子，分别从无序和已排序初态启动|统计单向/反向/间歇状态的概率与驻留时间；检验初态依赖，而非把单轨迹当作相区|
+|1|F=6、7 异常窗口加密输出，建议先 Δt=50–100 LJ 并检查极区最快链；保存珠 ID/分子 ID|分辨链转向、Q 改变、缺陷事件的先后顺序，避免高 F 单链和半缺陷对的角度混叠|
+|2|改变 R，固定密度、珠径、每链 30 珠：R、2R、4R 用 300、1200、4800 珠|研究 L/R 从约 5.37 降至 2.69、1.34 时，全局周向结构是否被局部组织取代|
+|2|固定 R、总珠数，改变每链 15/30/60 珠及弯曲系数|区分曲率、链长、刚度的贡献；报告实际弯曲持久性，不直接把角势系数当连续 K|
+
+建议把状态图定义在“向列几何 + 极性组成 + 相对运动”上：P、S、环流、少数反向链数、整体旋转解释率、共转残余运动、稳健缺陷密度。先检验实际相关长度与 R 的关系；若使用连续场活性长度 sqrt(K/|ζ|)，需要标定有效 K 与活性应力 ζ，不能把逐珠力 F 直接代入 ζ。[依据：本次诊断；参考文献：R2、R6、R9]
+
+## 5. 文献已有内容与可形成的研究贡献
+
+Brown 已报告两极附近两对缺陷共旋转的 C 态，因此不能以相似轨道作为首次发现。Henkes 等已经讨论球面活性粒子的极性带与更复杂状态。它们提供几何和动力学参照，但没有替代你当前连接长链体系中的逐链极性组成、反向环流与瞬时力矩检验。[参考文献：R4、R2]
+
+更有说服力的论文主线是：**相同类型的球面向列缺陷纹理能够容纳不同的极性流动组织；链的极性组成控制净旋转，重组过程引起间歇运动变化，而球面尺寸与链长决定这种几何—动力学关系的稳定性。** 当前前两点已有定量支持，尺寸选择和切换因果需要上述对照。Duman 等的切向自推进半柔性链模型为刚度、长宽比和活动性影响集体态提供直接微观背景；Hsu 等提供球面丝状体极性图案的实验比较。没有完成全面新颖性检索前，不使用“首次发现”措辞。[依据：D1–D4；参考文献：R9、R7]
+
+## 6. 验证与观测限制
+
+新增 6006 帧重新识别的数量均与原始计数表一致，保存缺陷标记与当前识别器位置一致到浮点精度；净电荷均 +2。平行输运、旋转拟合的数值检查沿用此前已通过的测试。每个 F 只有一条完整生产轨迹，表内差异不是多个独立种子的统计显著性结论。不同 F 的极性分支不能直接解释为随 F 单调变化的稳态相图。[依据：各 F 的 marker_validation.csv、summary.json；D1–D5]
+
+高 F 的每步保存间隔仍为 1000 LJ；逐链旋转可能超过 π，无头缺陷对方向增量超过 π/2 也会发生混叠。各 F 子目录中 temporal_resolution.csv 的长 lag、defect_relative_motion.csv 的实验室系对内相位速度，均是有限间隔主值量，未经高 F 解混叠，不应直接解释为真实连续角速度。chain_motion_timeseries.csv 明确保留 principal 前缀和高 F 警示。本文关于 F=4 反向流另核对了实际位移；不使用高 F 主值速度的符号认定反转。[依据：采样间隔、逐链检查、角度主值定义]
+
+纹理轴本身是无头轴。其正负选择或重排时的连续转向都可能改变有符号投影，故图 08 改用瞬时总环流方向作为多数方向；不会把共同符号变化直接称作所有链真实反转。当总环流接近零时方向本身不稳定，应看环流模长及相对链组成，而不是逐条解释投影尖峰。[依据：D2、图 07、08]
+
+旧七组和新增六组的 MPI、预演化及运行长度不同；同一目录里 F=2、4、6、7、8 的打印 seed 与正式 fix 展开 seed 也不同。本次按正式 fix 数值登记。部分日志混入非数值文字，热力学量未用于证明相变。后续需记录实际二进制/源码版本、生产种子和速度钳制比例；这些是复现限制，不构成否定当前坐标分析的理由。[依据：provenance.json、所给 fix]
+
+## 7. 交付文件
+
+- full_coordinate_summary.csv：七组完整轨迹的主结果，F=1 指压缩制备轨迹。
+- 06_full_coordinate_comparison.png：角速度、P/Q、配对与整体运动跨 F 比较。
+- 07_burst_mechanism_diagnostics.png：F=6、7 的缺陷、极性、环流及运动同步变化。
+- 08_chain_polarity_evolution.png：逐链相对多数方向的有符号环流。
+- 09_same_nematic_different_polarity.png：F=2 与 F=4 的实际链排布及推进方向。
+- chain_motion_timeseries.csv、chain_motion_summary.json：逐链证据与高 F 混叠提示。
+- state_conditional_metrics.csv、event_smoothing_every_frame.csv：异常状态和尺度检查。
+- F_2、F_4、F_6、F_7、F_8、F_9：每组完整的逐帧 CSV、NPZ、输入轨迹哈希、图和统计。
+- activity_summary.csv、window_statistics.csv、01–05 图：此前 13 组计数比较，保留作背景；其中 F=1 为旧轨迹，勿与本报告的完整轨迹 F=1 混用。
+
+复现顺序：在 video 目录运行 postprocess_activity_trajectories.py、summarize_full_activity.py、analyze_chain_motion.py、activity_event_checks.py、write_full_activity_report.py。需 NumPy/SciPy/Matplotlib；已完成每组会跳过，若修改算法应使用新的输出目录。source_archive 保留本次源代码；generalized_pipeline_source.py 记录由 F=1 流程参数化的实际计算代码。未启动 LAMMPS。[依据：本次执行与输出]
+
+## 8. 经核验文献
+
+出版社/机构全文和 Crossref/OpenAlex 元数据核验记录随报告保存。R1、R6 是高被引基础文献；R9 本次 Crossref 返回 100 次引用。R2、R4、R7 虽未达 100 次，但主题直接相关而保留。引用数采用各数据库明确口径，旧表为 2026-10-12 OpenAlex，R9 为 2026-10-13 Crossref，不能混排，也不冒充 WoS/Scopus 实时被引数。核心期刊正式出版信息均可由 DOI 核对，未声称已获得本会话不可用的 WoS/Scopus 逐篇索引查询结果。[核验：verified_references.json、duman_crossref.json、各 DOI]
+
+'''.replace('TABLE',table)
+old=(ROOT/'sphere_analysis'/'README.md').read_text(encoding='utf-8');refs=old.split('## 已核实的相关文献')[1].split('优先参考')[0]
+report+=refs+'\n**R9** Özer Duman; Rolf E. Isele-Holder; Jens Elgeti; Gerhard Gompper. **Collective dynamics of self-propelled semiflexible filaments.** *Soft Matter* **14**(22), 4483–4494 (2018). [DOI](https://doi.org/10.1039/C8SM00282G)；[RSC 正式全文](https://pubs.rsc.org/en/content/articlehtml/2018/sm/c8sm00282g)。Crossref 被引数：100（2026-10-13 查询）。\n'
+(OUT/'机制分析报告.md').write_text(report,encoding='utf-8')
+for name in ['postprocess_activity_trajectories.py','summarize_full_activity.py','analyze_chain_motion.py','activity_event_checks.py','write_full_activity_report.py','postprocess_compression.py']:
+    shutil.copy2(ROOT/name,OUT/'source_archive'/name)
+warning='Finite-interval diagnostics: at high F, temporal_resolution long lags and laboratory pair angular phase increments can alias. Chain principal rotation rates are not continuous unwrapped angular velocities. See the main Chinese report, Section 6. Do not infer actual rotation reversal from high-F principal rates.\n'
+for F in [2,4,6,7,8,9]:(OUT/('F_%s'%F)/'READ_ME_resolution.txt').write_text(warning)
+print('Full-coordinate report updated')

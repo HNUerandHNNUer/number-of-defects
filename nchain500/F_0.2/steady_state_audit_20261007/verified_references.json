@@ -1,0 +1,511 @@
+[
+  {
+    "doi": "10.1126/science.1254784",
+    "retrieval_date": "2026-10-07",
+    "crossref_error": "HTTP Error 429: Too Many Requests",
+    "openalex": {
+      "id": "https://openalex.org/W1997445226",
+      "title": "Topology and dynamics of active nematic vesicles",
+      "publication_year": 2014,
+      "cited_by_count": 596
+    }
+  },
+  {
+    "doi": "10.1103/PhysRevE.97.042605",
+    "retrieval_date": "2026-10-07",
+    "crossref": {
+      "title": [
+        "Dynamical patterns in nematic active matter on a sphere"
+      ],
+      "author": [
+        {
+          "given": "Silke",
+          "family": "Henkes",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "M. Cristina",
+          "family": "Marchetti",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rastko",
+          "family": "Sknepnek",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Physical Review E"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            16
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            16
+          ]
+        ]
+      },
+      "volume": "97",
+      "issue": "4",
+      "page": null,
+      "article-number": "042605",
+      "is-referenced-by-count": 63,
+      "URL": "https://doi.org/10.1103/physreve.97.042605"
+    },
+    "openalex": {
+      "id": "https://openalex.org/W2614810344",
+      "title": "Dynamical patterns in nematic active matter on a sphere",
+      "publication_year": 2018,
+      "cited_by_count": 66
+    }
+  },
+  {
+    "doi": "10.1039/C8SM02202J",
+    "retrieval_date": "2026-10-07",
+    "crossref": {
+      "title": [
+        "The interplay between activity and filament flexibility determines the emergent properties of active nematics"
+      ],
+      "author": [
+        {
+          "given": "Abhijeet",
+          "family": "Joshi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Martin Fisher School of Physics"
+            },
+            {
+              "name": "Brandeis University"
+            },
+            {
+              "name": "Waltham"
+            },
+            {
+              "name": "USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Elias",
+          "family": "Putzig",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Martin Fisher School of Physics"
+            },
+            {
+              "name": "Brandeis University"
+            },
+            {
+              "name": "Waltham"
+            },
+            {
+              "name": "USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Aparna",
+          "family": "Baskaran",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Martin Fisher School of Physics"
+            },
+            {
+              "name": "Brandeis University"
+            },
+            {
+              "name": "Waltham"
+            },
+            {
+              "name": "USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9211-2434",
+          "authenticated-orcid": false,
+          "given": "Michael F.",
+          "family": "Hagan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Martin Fisher School of Physics"
+            },
+            {
+              "name": "Brandeis University"
+            },
+            {
+              "name": "Waltham"
+            },
+            {
+              "name": "USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Soft Matter"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "published-print": null,
+      "published-online": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "volume": "15",
+      "issue": "1",
+      "page": "94-101",
+      "article-number": null,
+      "is-referenced-by-count": 31,
+      "URL": "https://doi.org/10.1039/c8sm02202j"
+    },
+    "openalex": {
+      "id": "https://openalex.org/W2768413916",
+      "title": "The interplay between activity and filament flexibility determines the emergent properties of active nematics",
+      "publication_year": 2018,
+      "cited_by_count": 37
+    }
+  },
+  {
+    "doi": "10.1063/1.457480",
+    "retrieval_date": "2026-10-07",
+    "crossref": {
+      "title": [
+        "Error estimates on averages of correlated data"
+      ],
+      "author": [
+        {
+          "given": "H.",
+          "family": "Flyvbjerg",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "The Niels Bohr Institute, Blegdamsvej 17, DK-2100 Copenhagen O/, Denmark"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "H. G.",
+          "family": "Petersen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute of Mathematics and Computer Science, Odense University, DK-5230 Odense M, Denmark"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "The Journal of Chemical Physics"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1989,
+            7,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1989,
+            7,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "volume": "91",
+      "issue": "1",
+      "page": "461-466",
+      "article-number": null,
+      "is-referenced-by-count": 1465,
+      "URL": "https://doi.org/10.1063/1.457480"
+    },
+    "openalex": {
+      "id": "https://openalex.org/W3017082821",
+      "title": "Error estimates on averages of correlated data",
+      "publication_year": 1989,
+      "cited_by_count": 1554
+    }
+  },
+  {
+    "doi": "10.1021/acs.jctc.5b00784",
+    "retrieval_date": "2026-10-07",
+    "crossref": {
+      "title": [
+        "A Simple Method for Automated Equilibration Detection in Molecular Simulations"
+      ],
+      "author": [
+        {
+          "given": "John D.",
+          "family": "Chodera",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Computational Biology Program, Sloan Kettering Institute, Memorial Sloan Kettering Cancer Center, 1275 York Avenue, Box 357, New York, New York 10065, United States"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Chemical Theory and Computation"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            3,
+            23
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            12
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2016,
+            3,
+            23
+          ]
+        ]
+      },
+      "volume": "12",
+      "issue": "4",
+      "page": "1799-1805",
+      "article-number": null,
+      "is-referenced-by-count": 206,
+      "URL": "https://doi.org/10.1021/acs.jctc.5b00784"
+    },
+    "openalex": {
+      "id": "https://openalex.org/W2950669909",
+      "title": "A Simple Method for Automated Equilibration Detection in Molecular Simulations",
+      "publication_year": 2016,
+      "cited_by_count": 235
+    }
+  },
+  {
+    "doi": "10.1038/nphys4276",
+    "retrieval_date": "2026-10-07",
+    "crossref": {
+      "title": [
+        "Curvature-induced defect unbinding and dynamics in active nematic toroids"
+      ],
+      "author": [
+        {
+          "given": "Perry W.",
+          "family": "Ellis",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniel J. G.",
+          "family": "Pearce",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5626-7391",
+          "authenticated-orcid": false,
+          "given": "Ya-Wen",
+          "family": "Chang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Guillermo",
+          "family": "Goldsztein",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Luca",
+          "family": "Giomi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1286-9809",
+          "authenticated-orcid": false,
+          "given": "Alberto",
+          "family": "Fernandez-Nieves",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Nature Physics"
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            10,
+            23
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2018,
+            1
+          ]
+        ]
+      },
+      "published-online": {
+        "date-parts": [
+          [
+            2017,
+            10,
+            23
+          ]
+        ]
+      },
+      "volume": "14",
+      "issue": "1",
+      "page": "85-90",
+      "article-number": null,
+      "is-referenced-by-count": 131,
+      "URL": "https://doi.org/10.1038/nphys4276"
+    },
+    "openalex": {
+      "id": "https://openalex.org/W2766185013",
+      "title": "Curvature-induced defect unbinding and dynamics in active nematic toroids",
+      "publication_year": 2017,
+      "cited_by_count": 137
+    }
+  }
+]

@@ -1,0 +1,149 @@
+fortran_openmp_complete.zip 并行 Fortran 运行说明
+================================================
+
+一、解压并进入目录
+------------------
+unzip fortran_openmp_complete.zip
+cd fortran_openmp
+
+如果解压后的目录名不同，请进入实际解压出来的目录。
+
+二、编译
+--------
+首次运行前执行：
+
+make
+
+编译成功后会生成可执行文件，例如：
+
+bd_parallel
+
+如果 run_parallel.sh 没有执行权限，先执行：
+
+chmod +x run_parallel.sh
+
+三、前台并行运行
+----------------
+OpenMP 并行核数通过 OMP_NUM_THREADS 控制。
+
+使用 4 核：
+
+OMP_NUM_THREADS=4 ./run_parallel.sh
+
+使用 8 核：
+
+OMP_NUM_THREADS=8 ./run_parallel.sh
+
+使用 16 核：
+
+OMP_NUM_THREADS=16 ./run_parallel.sh
+
+使用 32 核：
+
+OMP_NUM_THREADS=32 ./run_parallel.sh
+
+注意：
+这里是 OpenMP 并行，不要使用 mpirun。
+也就是说，不要写：
+
+mpirun -np 8 ./bd_parallel
+
+四、nohup 后台提交
+------------------
+使用 4 核后台运行：
+
+nohup env OMP_NUM_THREADS=4 ./run_parallel.sh > bd.log 2>&1 &
+
+使用 8 核后台运行：
+
+nohup env OMP_NUM_THREADS=8 ./run_parallel.sh > bd.log 2>&1 &
+
+使用 16 核后台运行：
+
+nohup env OMP_NUM_THREADS=16 ./run_parallel.sh > bd.log 2>&1 &
+
+命令最后的 & 表示后台运行。
+
+五、查看后台任务
+----------------
+查看 bd_parallel 进程：
+
+pgrep -af bd_parallel
+
+或者：
+
+ps -ef | grep '[b]d_parallel'
+
+查看 CPU 使用情况：
+
+top
+
+六、查看运行日志
+----------------
+实时查看日志：
+
+tail -f bd.log
+
+退出日志查看：
+
+Ctrl+C
+
+这不会终止后台计算。
+
+七、停止任务
+------------
+先查 PID：
+
+pgrep -af bd_parallel
+
+然后停止指定 PID：
+
+kill PID
+
+例如：
+
+kill 123456
+
+如果普通 kill 无法停止，再使用：
+
+kill -9 123456
+
+八、最常用命令汇总
+------------------
+首次使用：
+
+unzip fortran_openmp_complete.zip
+cd fortran_openmp
+make
+chmod +x run_parallel.sh
+
+4 核前台运行：
+
+OMP_NUM_THREADS=4 ./run_parallel.sh
+
+8 核后台运行：
+
+nohup env OMP_NUM_THREADS=8 ./run_parallel.sh > bd.log 2>&1 &
+
+查看任务：
+
+pgrep -af bd_parallel
+
+查看日志：
+
+tail -f bd.log
+
+九、核数说明
+------------
+OMP_NUM_THREADS 后面的数字就是并行线程数。
+
+例如：
+
+OMP_NUM_THREADS=4   表示 4 个 OpenMP 线程
+OMP_NUM_THREADS=8   表示 8 个 OpenMP 线程
+OMP_NUM_THREADS=16  表示 16 个 OpenMP 线程
+
+建议不要超过服务器实际可用 CPU 核数。
+可用核数可以用下面命令查看：
+
+nproc

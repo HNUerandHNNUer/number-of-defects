@@ -1,0 +1,70 @@
+LAMMPS (22 Jul 2025 - Update 1)
+units lj
+atom_style atomic
+atom_modify map array
+region b block -50 50 -50 50 -50 50
+create_box 1 b
+Created orthogonal box = (-50 -50 -50) to (50 50 50)
+  1 by 1 by 1 MPI processor grid
+create_atoms 1 random 6000 314159 b
+Created 6000 atoms
+  using lattice units in orthogonal box = (-50 -50 -50) to (50 50 50)
+  create_atoms CPU = 0.000 seconds
+mass 1 1
+pair_style zero 2.0
+pair_coeff * *
+neighbor 0.5 bin
+neigh_modify every 1 delay 0 check yes
+timestep 0.0025
+thermo 4000
+write_dump all custom start.dump id xu yu zu modify sort id format float %.16g
+WARNING: Calling write_dump before a full system init (E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain100\validation_20261010\lammps-stable_22Jul2025_update1\src\write_dump.cpp:89)
+fix bd all bd/audit/free 1000 1 0 246813 mchain 30
+run 4000
+WARNING: No fixes with time integration, atoms won't move
+For more information see https://docs.lammps.org/err0028 (E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain100\validation_20261010\lammps-stable_22Jul2025_update1\src\verlet.cpp:60)
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 2.5
+  ghost atom cutoff = 2.5
+  binsize = 1.25, bins = 80 80 80
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d
+      bin: standard
+Per MPI rank memory allocation (min/avg/max) = 5.773 | 5.773 | 5.773 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0              0              0              0              4.6637112e-83
+      4000   0.80167008     0              0              1.2023047      0.0048092188 
+Loop time of 1.94157 on 1 procs for 4000 steps with 6000 atoms
+
+Performance: 445000.925 tau/day, 2060.189 timesteps/s, 12.361 Matom-step/s
+100.6% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.000246   | 0.000246   | 0.000246   |   0.0 |  0.01
+Neigh   | 0.003459   | 0.003459   | 0.003459   |   0.0 |  0.18
+Comm    | 0.010892   | 0.010892   | 0.010892   |   0.0 |  0.56
+Output  | 2.7e-05    | 2.7e-05    | 2.7e-05    |   0.0 |  0.00
+Modify  | 1.8936     | 1.8936     | 1.8936     |   0.0 | 97.53
+Other   |            | 0.03333    |            |       |  1.72
+
+Nlocal:           6000 ave        6000 max        6000 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           1003 ave        1003 max        1003 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:           1172 ave        1172 max        1172 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 1172
+Ave neighs/atom = 0.19533333
+Neighbor list builds = 7
+Dangerous builds = 0
+write_dump all custom end.dump id xu yu zu modify sort id format float %.16g
+Total wall time: 0:00:01

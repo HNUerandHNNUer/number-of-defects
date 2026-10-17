@@ -1,0 +1,21 @@
+{
+  "source": "E:\\1\\7.9.2025\\3000\\phi_0.7\\number of defects\\new\\nchain10\\F_50_gpu1",
+  "frames": 370,
+  "last_saved_step": 36900000,
+  "warning_threshold": 1.4230249470757705,
+  "bonds_per_frame": 290,
+  "all": {
+    "frames": 370,
+    "frames_with_overlong_bonds": 351,
+    "bond_frame_observations_above_warning": 1763,
+    "bond_frame_observations_ge_R0": 1233,
+    "max_bond": 1.7247791693431365
+  },
+  "after_available_25_percent": {
+    "frames": 277,
+    "frames_with_overlong_bonds": 277,
+    "bond_frame_observations_above_warning": 1590,
+    "bond_frame_observations_ge_R0": 1129,
+    "max_bond": 1.7247791693431365
+  }
+}

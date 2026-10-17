@@ -1,0 +1,747 @@
+{
+  "0.1": {
+    "initial_file_sha256": "9eea7389ac6c0e7fccfc3702afe19c083157df55ca16c809c106730aaad998db",
+    "axis": [
+      -0.8734641816749272,
+      -0.003695258574579252,
+      0.4868743866697205
+    ],
+    "director_eigenvalues": [
+      0.037915434854973944,
+      0.45208436460733886,
+      0.510000200537687
+    ],
+    "initial_defect_positions_unit": [
+      [
+        -0.6809493367095995,
+        -0.27838380078091846,
+        0.6773554903427936
+      ],
+      [
+        -0.9994355655679255,
+        -0.0015189643819829926,
+        0.03355954447139132
+      ],
+      [
+        0.8232326924931113,
+        0.007088349830612566,
+        -0.5676598359116325
+      ],
+      [
+        0.972606487115146,
+        0.22935322993864476,
+        -0.03786445745347967
+      ]
+    ],
+    "initial_defect_charges": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "initial_defect_polar_cosine": [
+      0.9256005941960098,
+      0.8893160640131869,
+      -0.9954694978085438,
+      -0.8688196833485395
+    ],
+    "initial_diagnostics": {
+      "status": "topology_valid_with_warnings",
+      "physical_accuracy_certified": false,
+      "field_definition": "unsmoothed_directors",
+      "n_vertices": 300,
+      "n_edges": 894,
+      "n_faces": 596,
+      "euler_characteristic": 2,
+      "radius": 5.175683597190623,
+      "max_relative_radial_deviation": 0.0003774543109347217,
+      "sum_solid_angle": 12.566370614359172,
+      "edge_rotation_cancellation": 2.6645352591003757e-15,
+      "max_quantization_residual": 1.1102230246251565e-16,
+      "net_charge_raw": 2.0,
+      "net_charge": 2.0,
+      "charged_faces": 4,
+      "max_edge_angle_rad": 0.6900422864202939,
+      "minimum_branch_margin_rad": 0.09925605414221383,
+      "near_branch_edges": 0,
+      "minimum_order": 1.0,
+      "mean_order": 1.0,
+      "order_definition": "unit-director placeholder; NOT a measured local nematic order",
+      "low_order_vertices": 0,
+      "warnings": [
+        "Sparse angular sampling: max edge exceeds 0.5 rad; not a radius failure"
+      ],
+      "charge_counts": {
+        "1": 4
+      },
+      "charge_counts_key": "twice the physical charge; e.g. 1 means +1/2",
+      "location_definition": "normalized spherical face barycenter, not a fitted defect-core position"
+    },
+    "initial_active_torque_per_F": [
+      398.40886052565014,
+      -109.51547655300337,
+      -235.10438397037152
+    ],
+    "initial_omega_per_F_no_noise_or_clipping": [
+      7.098545367433592e-05,
+      -2.012744518144321e-05,
+      -4.248448451398266e-05
+    ],
+    "row": {
+      "activity": 0.1,
+      "radius": 5.1756835971906225,
+      "nominal_radius": 5.175492,
+      "n_frames": 1001,
+      "last_step": 100000000,
+      "physical_time": 1000000.0,
+      "fraction_four": 0.9300699300699301,
+      "fraction_extra_pairs": 0.06993006993006994,
+      "mean_defects": 4.147852147852148,
+      "max_defects": 8,
+      "late_fraction_four": 0.9461077844311377,
+      "late_mean_defects": 4.111776447105789,
+      "contour_length": 27.78221690172569,
+      "end_to_end": 4.722323550485752,
+      "initial_azimuthal_nematic": 0.858582590093007,
+      "initial_signed_circulation": -0.317544957758228
+    }
+  },
+  "0.17": {
+    "initial_file_sha256": "9eea7389ac6c0e7fccfc3702afe19c083157df55ca16c809c106730aaad998db",
+    "axis": [
+      -0.8734641816749272,
+      -0.003695258574579252,
+      0.4868743866697205
+    ],
+    "director_eigenvalues": [
+      0.037915434854973944,
+      0.45208436460733886,
+      0.510000200537687
+    ],
+    "initial_defect_positions_unit": [
+      [
+        -0.6809493367095995,
+        -0.27838380078091846,
+        0.6773554903427936
+      ],
+      [
+        -0.9994355655679255,
+        -0.0015189643819829926,
+        0.03355954447139132
+      ],
+      [
+        0.8232326924931113,
+        0.007088349830612566,
+        -0.5676598359116325
+      ],
+      [
+        0.972606487115146,
+        0.22935322993864476,
+        -0.03786445745347967
+      ]
+    ],
+    "initial_defect_charges": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "initial_defect_polar_cosine": [
+      0.9256005941960098,
+      0.8893160640131869,
+      -0.9954694978085438,
+      -0.8688196833485395
+    ],
+    "initial_diagnostics": {
+      "status": "topology_valid_with_warnings",
+      "physical_accuracy_certified": false,
+      "field_definition": "unsmoothed_directors",
+      "n_vertices": 300,
+      "n_edges": 894,
+      "n_faces": 596,
+      "euler_characteristic": 2,
+      "radius": 5.175683597190623,
+      "max_relative_radial_deviation": 0.0003774543109347217,
+      "sum_solid_angle": 12.566370614359172,
+      "edge_rotation_cancellation": 2.6645352591003757e-15,
+      "max_quantization_residual": 1.1102230246251565e-16,
+      "net_charge_raw": 2.0,
+      "net_charge": 2.0,
+      "charged_faces": 4,
+      "max_edge_angle_rad": 0.6900422864202939,
+      "minimum_branch_margin_rad": 0.09925605414221383,
+      "near_branch_edges": 0,
+      "minimum_order": 1.0,
+      "mean_order": 1.0,
+      "order_definition": "unit-director placeholder; NOT a measured local nematic order",
+      "low_order_vertices": 0,
+      "warnings": [
+        "Sparse angular sampling: max edge exceeds 0.5 rad; not a radius failure"
+      ],
+      "charge_counts": {
+        "1": 4
+      },
+      "charge_counts_key": "twice the physical charge; e.g. 1 means +1/2",
+      "location_definition": "normalized spherical face barycenter, not a fitted defect-core position"
+    },
+    "initial_active_torque_per_F": [
+      398.40886052565014,
+      -109.51547655300337,
+      -235.10438397037152
+    ],
+    "initial_omega_per_F_no_noise_or_clipping": [
+      7.098545367433592e-05,
+      -2.012744518144321e-05,
+      -4.248448451398266e-05
+    ],
+    "row": {
+      "activity": 0.17,
+      "radius": 5.1756835971906225,
+      "nominal_radius": 5.175492,
+      "n_frames": 1001,
+      "last_step": 100000000,
+      "physical_time": 1000000.0,
+      "fraction_four": 0.926073926073926,
+      "fraction_extra_pairs": 0.07392607392607392,
+      "mean_defects": 4.147852147852148,
+      "max_defects": 6,
+      "late_fraction_four": 0.9161676646706587,
+      "late_mean_defects": 4.167664670658683,
+      "contour_length": 27.78221690172569,
+      "end_to_end": 4.722323550485752,
+      "initial_azimuthal_nematic": 0.858582590093007,
+      "initial_signed_circulation": -0.317544957758228
+    }
+  },
+  "0.3": {
+    "initial_file_sha256": "6a35368ce37676930b24deae4f85cedd4cce8ea57b47b2267699e9150dde3a77",
+    "axis": [
+      0.30909654805893844,
+      -0.5816786423389757,
+      0.7524023398586257
+    ],
+    "director_eigenvalues": [
+      0.12010679308607408,
+      0.3800796498949199,
+      0.4998135570190061
+    ],
+    "initial_defect_positions_unit": [
+      [
+        0.780373728606913,
+        -0.20746096896447402,
+        0.5898955755525428
+      ],
+      [
+        -0.3473449658443841,
+        -0.8483174459966019,
+        0.39963606634082255
+      ],
+      [
+        -0.6976963449154892,
+        0.6915087740617559,
+        -0.18717752452464484
+      ],
+      [
+        0.12528705511289184,
+        0.1280716954218106,
+        -0.9838194929218074
+      ]
+    ],
+    "initial_defect_charges": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "initial_defect_polar_cosine": [
+      0.8057252517918472,
+      0.6867721217383536,
+      -0.7587242240897359,
+      -0.7759988621360393
+    ],
+    "initial_diagnostics": {
+      "status": "topology_valid",
+      "physical_accuracy_certified": false,
+      "field_definition": "unsmoothed_directors",
+      "n_vertices": 300,
+      "n_edges": 894,
+      "n_faces": 596,
+      "euler_characteristic": 2,
+      "radius": 5.175592528995402,
+      "max_relative_radial_deviation": 0.007191448313139004,
+      "sum_solid_angle": 12.566370614359174,
+      "edge_rotation_cancellation": -4.440892098500626e-16,
+      "max_quantization_residual": 1.1102230246251565e-16,
+      "net_charge_raw": 2.0,
+      "net_charge": 2.0,
+      "charged_faces": 4,
+      "max_edge_angle_rad": 0.39569157595907023,
+      "minimum_branch_margin_rad": 0.06178664599574324,
+      "near_branch_edges": 0,
+      "minimum_order": 1.0,
+      "mean_order": 1.0,
+      "order_definition": "unit-director placeholder; NOT a measured local nematic order",
+      "low_order_vertices": 0,
+      "warnings": [],
+      "charge_counts": {
+        "1": 4
+      },
+      "charge_counts_key": "twice the physical charge; e.g. 1 means +1/2",
+      "location_definition": "normalized spherical face barycenter, not a fitted defect-core position"
+    },
+    "initial_active_torque_per_F": [
+      -302.85234605018525,
+      638.7311840110448,
+      -773.2830973399244
+    ],
+    "initial_omega_per_F_no_noise_or_clipping": [
+      -5.508768889410199e-05,
+      0.00011604733559953797,
+      -0.00014194208136896687
+    ],
+    "row": {
+      "activity": 0.3,
+      "radius": 5.175592528995401,
+      "nominal_radius": 5.175492,
+      "n_frames": 10001,
+      "last_step": 1000000000,
+      "physical_time": 10000000.0,
+      "fraction_four": 0.9474052594740526,
+      "fraction_extra_pairs": 0.052594740525947405,
+      "mean_defects": 4.107789221077892,
+      "max_defects": 8,
+      "late_fraction_four": 0.9428114377124575,
+      "late_mean_defects": 4.11757648470306,
+      "contour_length": 27.827421949042826,
+      "end_to_end": 8.12387428653042,
+      "initial_azimuthal_nematic": 0.5659364087213391,
+      "initial_signed_circulation": -0.7080147827027251
+    }
+  },
+  "0.55": {
+    "initial_file_sha256": "9eea7389ac6c0e7fccfc3702afe19c083157df55ca16c809c106730aaad998db",
+    "axis": [
+      -0.8734641816749272,
+      -0.003695258574579252,
+      0.4868743866697205
+    ],
+    "director_eigenvalues": [
+      0.037915434854973944,
+      0.45208436460733886,
+      0.510000200537687
+    ],
+    "initial_defect_positions_unit": [
+      [
+        -0.6809493367095995,
+        -0.27838380078091846,
+        0.6773554903427936
+      ],
+      [
+        -0.9994355655679255,
+        -0.0015189643819829926,
+        0.03355954447139132
+      ],
+      [
+        0.8232326924931113,
+        0.007088349830612566,
+        -0.5676598359116325
+      ],
+      [
+        0.972606487115146,
+        0.22935322993864476,
+        -0.03786445745347967
+      ]
+    ],
+    "initial_defect_charges": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "initial_defect_polar_cosine": [
+      0.9256005941960098,
+      0.8893160640131869,
+      -0.9954694978085438,
+      -0.8688196833485395
+    ],
+    "initial_diagnostics": {
+      "status": "topology_valid_with_warnings",
+      "physical_accuracy_certified": false,
+      "field_definition": "unsmoothed_directors",
+      "n_vertices": 300,
+      "n_edges": 894,
+      "n_faces": 596,
+      "euler_characteristic": 2,
+      "radius": 5.175683597190623,
+      "max_relative_radial_deviation": 0.0003774543109347217,
+      "sum_solid_angle": 12.566370614359172,
+      "edge_rotation_cancellation": 2.6645352591003757e-15,
+      "max_quantization_residual": 1.1102230246251565e-16,
+      "net_charge_raw": 2.0,
+      "net_charge": 2.0,
+      "charged_faces": 4,
+      "max_edge_angle_rad": 0.6900422864202939,
+      "minimum_branch_margin_rad": 0.09925605414221383,
+      "near_branch_edges": 0,
+      "minimum_order": 1.0,
+      "mean_order": 1.0,
+      "order_definition": "unit-director placeholder; NOT a measured local nematic order",
+      "low_order_vertices": 0,
+      "warnings": [
+        "Sparse angular sampling: max edge exceeds 0.5 rad; not a radius failure"
+      ],
+      "charge_counts": {
+        "1": 4
+      },
+      "charge_counts_key": "twice the physical charge; e.g. 1 means +1/2",
+      "location_definition": "normalized spherical face barycenter, not a fitted defect-core position"
+    },
+    "initial_active_torque_per_F": [
+      398.40886052565014,
+      -109.51547655300337,
+      -235.10438397037152
+    ],
+    "initial_omega_per_F_no_noise_or_clipping": [
+      7.098545367433592e-05,
+      -2.012744518144321e-05,
+      -4.248448451398266e-05
+    ],
+    "row": {
+      "activity": 0.55,
+      "radius": 5.1756835971906225,
+      "nominal_radius": 5.175492,
+      "n_frames": 1001,
+      "last_step": 100000000,
+      "physical_time": 1000000.0,
+      "fraction_four": 0.916083916083916,
+      "fraction_extra_pairs": 0.08391608391608392,
+      "mean_defects": 4.16983016983017,
+      "max_defects": 8,
+      "late_fraction_four": 0.906187624750499,
+      "late_mean_defects": 4.187624750499002,
+      "contour_length": 27.78221690172569,
+      "end_to_end": 4.722323550485752,
+      "initial_azimuthal_nematic": 0.858582590093007,
+      "initial_signed_circulation": -0.317544957758228
+    }
+  },
+  "1": {
+    "initial_file_sha256": "9eea7389ac6c0e7fccfc3702afe19c083157df55ca16c809c106730aaad998db",
+    "axis": [
+      -0.8734641816749272,
+      -0.003695258574579252,
+      0.4868743866697205
+    ],
+    "director_eigenvalues": [
+      0.037915434854973944,
+      0.45208436460733886,
+      0.510000200537687
+    ],
+    "initial_defect_positions_unit": [
+      [
+        -0.6809493367095995,
+        -0.27838380078091846,
+        0.6773554903427936
+      ],
+      [
+        -0.9994355655679255,
+        -0.0015189643819829926,
+        0.03355954447139132
+      ],
+      [
+        0.8232326924931113,
+        0.007088349830612566,
+        -0.5676598359116325
+      ],
+      [
+        0.972606487115146,
+        0.22935322993864476,
+        -0.03786445745347967
+      ]
+    ],
+    "initial_defect_charges": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "initial_defect_polar_cosine": [
+      0.9256005941960098,
+      0.8893160640131869,
+      -0.9954694978085438,
+      -0.8688196833485395
+    ],
+    "initial_diagnostics": {
+      "status": "topology_valid_with_warnings",
+      "physical_accuracy_certified": false,
+      "field_definition": "unsmoothed_directors",
+      "n_vertices": 300,
+      "n_edges": 894,
+      "n_faces": 596,
+      "euler_characteristic": 2,
+      "radius": 5.175683597190623,
+      "max_relative_radial_deviation": 0.0003774543109347217,
+      "sum_solid_angle": 12.566370614359172,
+      "edge_rotation_cancellation": 2.6645352591003757e-15,
+      "max_quantization_residual": 1.1102230246251565e-16,
+      "net_charge_raw": 2.0,
+      "net_charge": 2.0,
+      "charged_faces": 4,
+      "max_edge_angle_rad": 0.6900422864202939,
+      "minimum_branch_margin_rad": 0.09925605414221383,
+      "near_branch_edges": 0,
+      "minimum_order": 1.0,
+      "mean_order": 1.0,
+      "order_definition": "unit-director placeholder; NOT a measured local nematic order",
+      "low_order_vertices": 0,
+      "warnings": [
+        "Sparse angular sampling: max edge exceeds 0.5 rad; not a radius failure"
+      ],
+      "charge_counts": {
+        "1": 4
+      },
+      "charge_counts_key": "twice the physical charge; e.g. 1 means +1/2",
+      "location_definition": "normalized spherical face barycenter, not a fitted defect-core position"
+    },
+    "initial_active_torque_per_F": [
+      398.40886052565014,
+      -109.51547655300337,
+      -235.10438397037152
+    ],
+    "initial_omega_per_F_no_noise_or_clipping": [
+      7.098545367433592e-05,
+      -2.012744518144321e-05,
+      -4.248448451398266e-05
+    ],
+    "row": {
+      "activity": 1.0,
+      "radius": 5.1756835971906225,
+      "nominal_radius": 5.175492,
+      "n_frames": 1001,
+      "last_step": 100000000,
+      "physical_time": 1000000.0,
+      "fraction_four": 0.8931068931068931,
+      "fraction_extra_pairs": 0.1068931068931069,
+      "mean_defects": 4.21978021978022,
+      "max_defects": 8,
+      "late_fraction_four": 0.9161676646706587,
+      "late_mean_defects": 4.171656686626746,
+      "contour_length": 27.78221690172569,
+      "end_to_end": 4.722323550485752,
+      "initial_azimuthal_nematic": 0.858582590093007,
+      "initial_signed_circulation": -0.317544957758228
+    }
+  },
+  "3": {
+    "initial_file_sha256": "6a35368ce37676930b24deae4f85cedd4cce8ea57b47b2267699e9150dde3a77",
+    "axis": [
+      0.30909654805893844,
+      -0.5816786423389757,
+      0.7524023398586257
+    ],
+    "director_eigenvalues": [
+      0.12010679308607408,
+      0.3800796498949199,
+      0.4998135570190061
+    ],
+    "initial_defect_positions_unit": [
+      [
+        0.780373728606913,
+        -0.20746096896447402,
+        0.5898955755525428
+      ],
+      [
+        -0.3473449658443841,
+        -0.8483174459966019,
+        0.39963606634082255
+      ],
+      [
+        -0.6976963449154892,
+        0.6915087740617559,
+        -0.18717752452464484
+      ],
+      [
+        0.12528705511289184,
+        0.1280716954218106,
+        -0.9838194929218074
+      ]
+    ],
+    "initial_defect_charges": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "initial_defect_polar_cosine": [
+      0.8057252517918472,
+      0.6867721217383536,
+      -0.7587242240897359,
+      -0.7759988621360393
+    ],
+    "initial_diagnostics": {
+      "status": "topology_valid",
+      "physical_accuracy_certified": false,
+      "field_definition": "unsmoothed_directors",
+      "n_vertices": 300,
+      "n_edges": 894,
+      "n_faces": 596,
+      "euler_characteristic": 2,
+      "radius": 5.175592528995402,
+      "max_relative_radial_deviation": 0.007191448313139004,
+      "sum_solid_angle": 12.566370614359174,
+      "edge_rotation_cancellation": -4.440892098500626e-16,
+      "max_quantization_residual": 1.1102230246251565e-16,
+      "net_charge_raw": 2.0,
+      "net_charge": 2.0,
+      "charged_faces": 4,
+      "max_edge_angle_rad": 0.39569157595907023,
+      "minimum_branch_margin_rad": 0.06178664599574324,
+      "near_branch_edges": 0,
+      "minimum_order": 1.0,
+      "mean_order": 1.0,
+      "order_definition": "unit-director placeholder; NOT a measured local nematic order",
+      "low_order_vertices": 0,
+      "warnings": [],
+      "charge_counts": {
+        "1": 4
+      },
+      "charge_counts_key": "twice the physical charge; e.g. 1 means +1/2",
+      "location_definition": "normalized spherical face barycenter, not a fitted defect-core position"
+    },
+    "initial_active_torque_per_F": [
+      -302.85234605018525,
+      638.7311840110448,
+      -773.2830973399244
+    ],
+    "initial_omega_per_F_no_noise_or_clipping": [
+      -5.508768889410199e-05,
+      0.00011604733559953797,
+      -0.00014194208136896687
+    ],
+    "row": {
+      "activity": 3.0,
+      "radius": 5.175592528995401,
+      "nominal_radius": 5.175492,
+      "n_frames": 10001,
+      "last_step": 1000000000,
+      "physical_time": 10000000.0,
+      "fraction_four": 0.8575142485751425,
+      "fraction_extra_pairs": 0.1424857514248575,
+      "mean_defects": 4.334166583341666,
+      "max_defects": 16,
+      "late_fraction_four": 0.8708258348330334,
+      "late_mean_defects": 4.266346730653869,
+      "contour_length": 27.827421949042826,
+      "end_to_end": 8.12387428653042,
+      "initial_azimuthal_nematic": 0.5659364087213391,
+      "initial_signed_circulation": -0.7080147827027251
+    }
+  },
+  "5": {
+    "initial_file_sha256": "9eea7389ac6c0e7fccfc3702afe19c083157df55ca16c809c106730aaad998db",
+    "axis": [
+      -0.8734641816749272,
+      -0.003695258574579252,
+      0.4868743866697205
+    ],
+    "director_eigenvalues": [
+      0.037915434854973944,
+      0.45208436460733886,
+      0.510000200537687
+    ],
+    "initial_defect_positions_unit": [
+      [
+        -0.6809493367095995,
+        -0.27838380078091846,
+        0.6773554903427936
+      ],
+      [
+        -0.9994355655679255,
+        -0.0015189643819829926,
+        0.03355954447139132
+      ],
+      [
+        0.8232326924931113,
+        0.007088349830612566,
+        -0.5676598359116325
+      ],
+      [
+        0.972606487115146,
+        0.22935322993864476,
+        -0.03786445745347967
+      ]
+    ],
+    "initial_defect_charges": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "initial_defect_polar_cosine": [
+      0.9256005941960098,
+      0.8893160640131869,
+      -0.9954694978085438,
+      -0.8688196833485395
+    ],
+    "initial_diagnostics": {
+      "status": "topology_valid_with_warnings",
+      "physical_accuracy_certified": false,
+      "field_definition": "unsmoothed_directors",
+      "n_vertices": 300,
+      "n_edges": 894,
+      "n_faces": 596,
+      "euler_characteristic": 2,
+      "radius": 5.175683597190623,
+      "max_relative_radial_deviation": 0.0003774543109347217,
+      "sum_solid_angle": 12.566370614359172,
+      "edge_rotation_cancellation": 2.6645352591003757e-15,
+      "max_quantization_residual": 1.1102230246251565e-16,
+      "net_charge_raw": 2.0,
+      "net_charge": 2.0,
+      "charged_faces": 4,
+      "max_edge_angle_rad": 0.6900422864202939,
+      "minimum_branch_margin_rad": 0.09925605414221383,
+      "near_branch_edges": 0,
+      "minimum_order": 1.0,
+      "mean_order": 1.0,
+      "order_definition": "unit-director placeholder; NOT a measured local nematic order",
+      "low_order_vertices": 0,
+      "warnings": [
+        "Sparse angular sampling: max edge exceeds 0.5 rad; not a radius failure"
+      ],
+      "charge_counts": {
+        "1": 4
+      },
+      "charge_counts_key": "twice the physical charge; e.g. 1 means +1/2",
+      "location_definition": "normalized spherical face barycenter, not a fitted defect-core position"
+    },
+    "initial_active_torque_per_F": [
+      398.40886052565014,
+      -109.51547655300337,
+      -235.10438397037152
+    ],
+    "initial_omega_per_F_no_noise_or_clipping": [
+      7.098545367433592e-05,
+      -2.012744518144321e-05,
+      -4.248448451398266e-05
+    ],
+    "row": {
+      "activity": 5.0,
+      "radius": 5.1756835971906225,
+      "nominal_radius": 5.175492,
+      "n_frames": 10001,
+      "last_step": 1000000000,
+      "physical_time": 10000000.0,
+      "fraction_four": 0.9471052894710529,
+      "fraction_extra_pairs": 0.052894710528947106,
+      "mean_defects": 4.107989201079892,
+      "max_defects": 8,
+      "late_fraction_four": 0.9456108778244351,
+      "late_mean_defects": 4.110777844431114,
+      "contour_length": 27.78221690172569,
+      "end_to_end": 4.722323550485752,
+      "initial_azimuthal_nematic": 0.858582590093007,
+      "initial_signed_circulation": -0.317544957758228
+    }
+  }
+}

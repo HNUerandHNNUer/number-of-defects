@@ -1,0 +1,14 @@
+[
+  {"name":"GPU1","host":"10.157.197.33","port":10001,"kind":"gpu","cores":12,"memory_gib":54,"gpu":"RTX 3080"},
+  {"name":"GPU2","host":"10.157.197.33","port":10002,"kind":"gpu","cores":12,"memory_gib":38,"gpu":"RTX 4070 Ti"},
+  {"name":"GPU3","host":"10.157.197.33","port":10003,"kind":"gpu","cores":12,"memory_gib":38,"gpu":"RTX 4070 Ti"},
+  {"name":"GPU4","host":"10.157.197.33","port":10004,"kind":"gpu","cores":12,"memory_gib":54,"gpu":"RTX 4090"},
+  {"name":"GPU5","host":"10.157.197.181","port":10005,"kind":"gpu","cores":12,"memory_gib":125,"gpu":"RTX 4070 Ti SUPER"},
+  {"name":"GPU6","host":"10.157.197.181","port":10006,"kind":"gpu","cores":12,"memory_gib":125,"gpu":"RTX 4070 Ti SUPER"},
+  {"name":"CPU1","host":"10.157.197.181","port":10051,"kind":"cpu","cores":32,"memory_gib":125},
+  {"name":"CPU2","host":"10.157.197.181","port":10052,"kind":"cpu","cores":32,"memory_gib":125},
+  {"name":"CPU3","host":"10.157.197.181","port":10053,"kind":"cpu","cores":32,"memory_gib":125},
+  {"name":"CPU4","host":"10.157.197.181","port":10054,"kind":"cpu","cores":32,"memory_gib":125},
+  {"name":"CPU5","host":"10.157.197.181","port":10055,"kind":"cpu","cores":32,"memory_gib":123},
+  {"name":"CPU6","host":"10.157.197.181","port":10056,"kind":"cpu","cores":32,"memory_gib":123}
+]

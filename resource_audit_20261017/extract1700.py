@@ -1,0 +1,3 @@
+from audit import connect
+from pathlib import Path
+c=connect('10.157.197.181',10055);s=c.open_sftp();b='/home/user/wxd/9.19.2026';x=s.open(b+'/extract_progress_0843.py').read().decode().replace('progress_20261017_0843','progress_20261017_1700').replace("if j['state']!='running' or 'n350' not in j['name']:continue","if j['name']!='relax_n350_F0.03_r2':continue");s.open(b+'/extract_progress_1700.py','w').write(x);i,o,e=c.exec_command('/home/user/anaconda3/bin/python '+b+'/extract_progress_1700.py',timeout=120);print(o.read().decode(),e.read().decode());s.get(b+'/progress_20261017_1700.zip','defect_focus_20261016/progress_20261017_1700.zip');c.close()

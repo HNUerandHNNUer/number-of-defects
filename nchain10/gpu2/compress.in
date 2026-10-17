@@ -1,0 +1,132 @@
+# Brownian dynamics simulation - reproducing Fortran code exactly
+#package gpu 1 precision single
+#suffix gpu
+#package gpu 1 neigh no
+#suffix gpu
+
+units           lj
+dimension       3
+boundary        p p p
+atom_style      molecular
+neighbor        0.5 nsq
+neigh_modify    every 1 delay 0 check yes
+
+atom_modify     map array sort 0 0.0
+special_bonds   fene
+# Read initial configuration
+read_data       polymer.data
+comm_modify     cutoff 10.0
+# Define groups
+group           all type 1
+
+# Force field parameters
+# WCA potential (repulsive LJ with cutoff at 2^(1/6))
+pair_style      lj/cut   1.1224620483093729814335330496792
+pair_coeff      1 1 1.0 1.0 1.1224620483093729814335330496792
+pair_modify     shift yes
+
+# FENE bonds (K=30, R0=1.5)
+bond_style      fene
+bond_coeff      1 30.0 1.5 1.0 1.0
+
+# Cosine angle potential 
+angle_style     cosine
+angle_coeff     1 30.0
+
+# Set timestep
+timestep        0.01
+
+variable        n_compress_steps equal 1000     # Fortran: DO i = 1, 1000
+variable        relax_steps      equal 1000     # Fortran: Evolve_Sample(1000)
+
+# 先定义一个动态获取 lx 的变量
+variable        lx_dynamic equal lx
+# 立即展开 ${lx_dynamic}，将 L_start 定义为一个固定的数字 (例如 781.925)
+variable        L_start    equal ${lx_dynamic}
+
+# 2. 计算目标大小和步长
+# 使用 v_变量名 的方式引用，避免使用 ${} 导致语法错误
+variable        L_final    equal v_L_start/10.0
+
+# 计算每一步的压缩量 (固定值)
+# 修正点：去掉双引号，使用 v_L_start 和 v_L_final 引用
+variable        delta_L    equal (v_L_start-v_L_final)/v_n_compress_steps
+
+# 3. 定义动态压缩过程中的变量
+# L_next: 下一步的盒子大小 (当前 lx - 固定步长)
+# 注意：这里必须用 v_delta_L
+variable        L_next     equal lx-v_delta_L
+
+# 计算新的边界 (Centered at 0)
+# 这里的 v_L_next 会在每次循环调用时自动取当前的 lx 进行计算
+variable        new_hi     equal v_L_next/2.0
+variable        new_lo     equal -v_new_hi
+# --- 初始设置 ---
+# 必须先初始化 fix，否则 run 会报错
+# 此时 r_sphere 会根据当前大盒子自动计算
+fix             bd1 all bd/sphere 1000.0 1.0 1.0 12345 mchain 30
+# 输出设置
+thermo_style    custom step temp ke pe etotal press lx
+thermo          1
+
+print           "Initial Box Size: ${L_start}"
+print           "Target Box Size: ${L_final}"
+print           "Delta per step: ${delta_L}"
+print           "Starting Compression Loop..."
+
+# 定义 Loop 变量 i
+variable        i loop ${n_compress_steps}
+
+# === 循环开始 ===
+label           loop_start
+
+    # --- 关键修复 3: 使用预计算的边界变量 ---
+    # 此时 ${new_lo} 会被解析为具体的浮点数，不会报错
+    change_box  all x final ${new_lo} ${new_hi} &
+                    y final ${new_lo} ${new_hi} &
+                    z final ${new_lo} ${new_hi} &
+                    remap units box
+    # 运行弛豫
+    # 每次 run 开始时，fix bd/sphere 的 init() 会被调用
+    # r_sphere 会自动更新为新盒子的大小
+#    dump        4 all custom 100 out-*.xyz id type x y z
+    #dump_modify     4 pad 10 sort id
+    velocity    all set 0 0 0
+    run         ${relax_steps}  post no
+#    undump      4
+    next        i
+jump            SELF loop_start
+# === 循环结束 ===
+
+unfix           bd1
+
+print           "Compression Finished. Final Box Size: $(lx)"
+# 重置步数
+
+# 保存压缩后的构型
+write_dump      all xyz out-compressed.xyz modify sort id
+
+
+# Reset timestep to 0 
+reset_timestep  0
+#dump            4 all custom 1 out-*.xyz id type x y z
+#run             0
+#dump_modify     4 pad 10 sort id
+# Write initial sample
+#write_dump      all custom out-0000000000.xyz modify sort id
+
+# Write restart file
+#write_restart   equil.restart
+neighbor        0.5 bin
+comm_modify     cutoff 0.0              
+atom_modify     sort 1000 0.0 
+# Arguments: ID group bd/sphere gamma T Fext seed mchain value
+fix             bd all bd/sphere 1000.0 1.0 1.0 12345 mchain 30
+
+# Save configurations 
+dump            4 all custom 100000 out-*.xyz id type x y z
+dump_modify     4 pad 10 sort id
+
+## Run production 
+##restart         100000 out-*.data
+run             1000000

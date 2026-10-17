@@ -1,0 +1,16 @@
+# input: /home/user/wxd/9.19.2026/nchain300/10.12.2026/F_5/results/defect_results.dat
+# status: 固定丢弃前25%帧，仅统计后75%帧
+# 固定统计时间步: 25000000 — 100000000
+# 总帧数: 1001；舍弃前25%: 250；统计后75%: 751
+# mean为分别四舍五入后的整数；raw_mean保留原始均值
+# SD使用原始帧和未取整均值计算，ddof=1；不是SEM
+# 独立取整后的总数可能不等于取整后的正、负缺陷数之和
+
+total defect 403 ± 92.010455
++1/2 defect 203 ± 46.005228
+-1/2 defect 199 ± 46.005228
+
+# 未取整均值（供比较与核查）
+total defect raw_mean=402.681758
++1/2 defect raw_mean=203.340879
+-1/2 defect raw_mean=199.340879

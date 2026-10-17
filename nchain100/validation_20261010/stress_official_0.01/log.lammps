@@ -1,0 +1,185 @@
+LAMMPS (22 Jul 2025 - Update 1)
+units lj
+atom_style molecular
+atom_modify map array
+boundary p p p
+read_data sample.data
+Reading data file ...
+  orthogonal box = (-18.866342 -18.866342 -18.866342) to (18.866342 18.866342 18.866342)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3000 atoms
+  scanning bonds ...
+  1 = max bonds/atom
+  scanning angles ...
+  1 = max angles/atom
+  orthogonal box = (-18.866342 -18.866342 -18.866342) to (18.866342 18.866342 18.866342)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  2900 bonds
+  reading angles ...
+  2800 angles
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     2 = max # of 1-2 neighbors
+     2 = max # of 1-3 neighbors
+     4 = max # of 1-4 neighbors
+     6 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_data CPU = 0.023 seconds
+comm_modify cutoff 3.0
+neighbor 0.5 bin
+neigh_modify every 1 delay 0 check yes
+special_bonds fene
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        1        1       
+  special bond factors coul:  0        1        1       
+     2 = max # of 1-2 neighbors
+     6 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+pair_style lj/cut 1.122462048309373
+pair_coeff 1 1 1 1
+pair_modify shift yes
+bond_style fene
+bond_coeff 1 30 1.5 1 1
+angle_style cosine
+angle_coeff 1 30
+thermo 100000
+thermo_style custom step pe
+timestep 0.01
+fix bd all brownian 1 123456 gamma_t 1000 rng uniform
+fix ext all bd/audit/forces 1000 0 25 123456 mchain 30
+compute b all bond/local dist
+compute bm all reduce max c_b inputs local
+variable bondmax equal c_bm
+fix guard all halt 1 v_bondmax > 1.42 error soft
+thermo 1000
+thermo_style custom step pe c_bm
+run 100000
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 1.622462
+  ghost atom cutoff = 3
+  binsize = 0.81123102, bins = 47 47 47
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Per MPI rank memory allocation (min/avg/max) = 7.43 | 7.43 | 7.43 Mbytes
+   Step         PotEng          c_bm     
+         0   19.931924      0.99746283   
+      1000   20.907518      1.1071784    
+      2000   20.972342      1.1200486    
+      3000   21.044009      1.1355238    
+      4000   21.133186      1.1190482    
+      5000   21.184051      1.1240127    
+      6000   21.216198      1.1102726    
+      7000   21.277236      1.1276511    
+      8000   21.357306      1.1178615    
+      9000   21.415775      1.1536079    
+     10000   21.473964      1.1329071    
+     11000   21.503099      1.1156697    
+     12000   21.626071      1.165328     
+     13000   21.653479      1.169283     
+     14000   21.699354      1.1651232    
+     15000   21.780119      1.1638824    
+     16000   21.813172      1.1389662    
+     17000   21.856256      1.191913     
+     18000   21.92174       1.1706464    
+     19000   21.977237      1.1991469    
+     20000   22.022305      1.1924898    
+     21000   22.022293      1.1800989    
+     22000   22.087214      1.2215873    
+     23000   22.119963      1.2023716    
+     24000   22.149825      1.1715059    
+     25000   22.223996      1.2083204    
+     26000   22.257133      1.1802711    
+     27000   22.291919      1.2187189    
+     28000   22.312652      1.2093822    
+     29000   22.3776        1.2444725    
+     30000   22.371079      1.2823853    
+     31000   22.491128      1.2416328    
+     32000   22.499173      1.225254     
+     33000   22.538833      1.1978993    
+     34000   22.640137      1.259275     
+     35000   22.669063      1.2242709    
+     36000   22.695171      1.2056651    
+     37000   22.770964      1.2373425    
+     38000   22.782408      1.2217808    
+     39000   22.81873       1.2574814    
+     40000   22.877023      1.2645004    
+     41000   22.887291      1.2900194    
+     42000   22.953938      1.2833847    
+     43000   22.938274      1.2890121    
+     44000   23.024438      1.2801504    
+     45000   23.001098      1.2420559    
+     46000   23.092052      1.2856509    
+     47000   23.117563      1.3069752    
+     48000   23.111572      1.2968185    
+     49000   23.176418      1.2913364    
+     50000   23.265205      1.2661639    
+     51000   23.257499      1.3111852    
+     52000   23.298682      1.2751498    
+     53000   23.338742      1.2301109    
+     54000   23.382906      1.2657311    
+     55000   23.344395      1.2659971    
+     56000   23.378667      1.2686815    
+     57000   23.441458      1.277184     
+     58000   23.48746       1.2964182    
+     59000   23.532048      1.2910422    
+     60000   23.561165      1.2732402    
+     61000   23.622279      1.2695588    
+     62000   23.632985      1.2530856    
+     63000   23.693474      1.2686021    
+     64000   23.69107       1.2726068    
+     65000   23.71277       1.2901828    
+     66000   23.751232      1.2680929    
+     67000   23.778909      1.26628      
+     68000   23.795138      1.2954202    
+     69000   23.856729      1.3111586    
+     70000   23.88067       1.304514     
+     71000   23.922245      1.2906576    
+     72000   23.927073      1.2687139    
+     73000   24.039852      1.2756898    
+     74000   24.003515      1.3325197    
+     75000   24.094431      1.340567     
+     76000   24.107662      1.3401738    
+     77000   24.171566      1.3584358    
+     78000   24.159967      1.3346276    
+     79000   24.21436       1.3621796    
+Fix halt condition for fix-id guard met on step 79324 with value 1.4204965167964179
+Loop time of 48.0425 on 1 procs for 79324 steps with 3000 atoms
+
+Performance: 1426570.258 tau/day, 1651.123 timesteps/s, 4.953 Matom-step/s
+99.7% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 5.7396     | 5.7396     | 5.7396     |   0.0 | 11.95
+Bond    | 11.066     | 11.066     | 11.066     |   0.0 | 23.03
+Neigh   | 0.18257    | 0.18257    | 0.18257    |   0.0 |  0.38
+Comm    | 0.09672    | 0.09672    | 0.09672    |   0.0 |  0.20
+Output  | 0.009994   | 0.009994   | 0.009994   |   0.0 |  0.02
+Modify  | 30.598     | 30.598     | 30.598     |   0.0 | 63.69
+Other   |            | 0.3491     |            |       |  0.73
+
+Nlocal:           3000 ave        3000 max        3000 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:            283 ave         283 max         283 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:           7399 ave        7399 max        7399 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 7399
+Ave neighs/atom = 2.4663333
+Ave special neighs/atom = 1.9333333
+Neighbor list builds = 299
+Dangerous builds = 0
+write_dump all custom last.dump id x y z modify sort id format float %.16g
+Total wall time: 0:00:48

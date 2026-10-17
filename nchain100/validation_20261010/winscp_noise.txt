@@ -1,0 +1,8 @@
+﻿option batch abort
+open 10004 -timeout=60 -rawsettings Shell=/bin/bash
+put "E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain100\validation_20261010\noise.data" /home/user/codex_bd_validation_20261010/noise.data
+put "E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain100\validation_20261010\in.noise" /home/user/codex_bd_validation_20261010/in.noise
+put "E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain100\validation_20261010\remote_noise.sh" /home/user/codex_bd_validation_20261010/remote_noise.sh
+call bash /home/user/codex_bd_validation_20261010/remote_noise.sh
+get /home/user/codex_bd_validation_20261010/noise_outputs.tar.gz "E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain100\validation_20261010\noise_outputs.tar.gz"
+exit

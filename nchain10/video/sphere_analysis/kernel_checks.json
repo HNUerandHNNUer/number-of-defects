@@ -1,0 +1,26 @@
+{
+  "0.1": {
+    "rotation_invariant_faces_and_charges": true,
+    "nematic_sign_invariant_charges": true,
+    "marker_circumcenter_vs_barycenter_degrees": [
+      5.082541062550764,
+      13.041558883043136,
+      10.004815706570849,
+      13.664927906765525
+    ],
+    "rotation_max_position_error": 2.6645352591003757e-15,
+    "max_edge_degrees": 39.536510697440356
+  },
+  "0.3": {
+    "rotation_invariant_faces_and_charges": true,
+    "nematic_sign_invariant_charges": true,
+    "marker_circumcenter_vs_barycenter_degrees": [
+      2.3281107823194396,
+      2.2617724298270345,
+      0.5919712083186139,
+      0.8161746117029717
+    ],
+    "rotation_max_position_error": 1.7763568394002505e-15,
+    "max_edge_degrees": 22.671457291334956
+  }
+}

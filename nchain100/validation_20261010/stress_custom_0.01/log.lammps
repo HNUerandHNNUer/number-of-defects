@@ -1,0 +1,186 @@
+LAMMPS (22 Jul 2025 - Update 1)
+units lj
+atom_style molecular
+atom_modify map array
+boundary p p p
+read_data sample.data
+Reading data file ...
+  orthogonal box = (-18.866342 -18.866342 -18.866342) to (18.866342 18.866342 18.866342)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3000 atoms
+  scanning bonds ...
+  1 = max bonds/atom
+  scanning angles ...
+  1 = max angles/atom
+  orthogonal box = (-18.866342 -18.866342 -18.866342) to (18.866342 18.866342 18.866342)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  2900 bonds
+  reading angles ...
+  2800 angles
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     2 = max # of 1-2 neighbors
+     2 = max # of 1-3 neighbors
+     4 = max # of 1-4 neighbors
+     6 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_data CPU = 0.022 seconds
+comm_modify cutoff 3.0
+neighbor 0.5 bin
+neigh_modify every 1 delay 0 check yes
+special_bonds fene
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        1        1       
+  special bond factors coul:  0        1        1       
+     2 = max # of 1-2 neighbors
+     6 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+pair_style lj/cut 1.122462048309373
+pair_coeff 1 1 1 1
+pair_modify shift yes
+bond_style fene
+bond_coeff 1 30 1.5 1 1
+angle_style cosine
+angle_coeff 1 30
+thermo 100000
+thermo_style custom step pe
+timestep 0.01
+fix bd all bd/sphere 1000 1 25 123456 mchain 30
+compute b all bond/local dist
+compute bm all reduce max c_b inputs local
+variable bondmax equal c_bm
+fix guard all halt 1 v_bondmax > 1.42 error soft
+thermo 1000
+thermo_style custom step pe c_bm
+run 100000
+WARNING: No fixes with time integration, atoms won't move
+For more information see https://docs.lammps.org/err0028 (E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain100\validation_20261010\lammps-stable_22Jul2025_update1\src\verlet.cpp:60)
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 1.622462
+  ghost atom cutoff = 3
+  binsize = 0.81123102, bins = 47 47 47
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Per MPI rank memory allocation (min/avg/max) = 7.43 | 7.43 | 7.43 Mbytes
+   Step         PotEng          c_bm     
+         0   19.931924      0.99746283   
+      1000   20.912848      1.1175476    
+      2000   20.976775      1.1135646    
+      3000   21.043867      1.1387788    
+      4000   21.128718      1.1131873    
+      5000   21.183724      1.1333428    
+      6000   21.213355      1.1181013    
+      7000   21.280145      1.1272679    
+      8000   21.355534      1.1081396    
+      9000   21.41763       1.1522981    
+     10000   21.468886      1.1315633    
+     11000   21.503494      1.1186264    
+     12000   21.617774      1.1572015    
+     13000   21.65464       1.1719433    
+     14000   21.70479       1.173365     
+     15000   21.782221      1.1606124    
+     16000   21.810044      1.1485739    
+     17000   21.860933      1.2001537    
+     18000   21.92804       1.1722258    
+     19000   21.968524      1.2067548    
+     20000   22.014721      1.1930887    
+     21000   22.027811      1.1880491    
+     22000   22.086068      1.2118636    
+     23000   22.11801       1.2008535    
+     24000   22.159065      1.1807812    
+     25000   22.224592      1.2076982    
+     26000   22.247876      1.1931508    
+     27000   22.288702      1.2126281    
+     28000   22.311413      1.2021815    
+     29000   22.378036      1.2583845    
+     30000   22.368103      1.2803239    
+     31000   22.486183      1.2396724    
+     32000   22.507428      1.2208415    
+     33000   22.535673      1.2001082    
+     34000   22.638871      1.2511999    
+     35000   22.661411      1.2299325    
+     36000   22.698564      1.208474     
+     37000   22.767859      1.233757     
+     38000   22.786596      1.2254621    
+     39000   22.824739      1.2647406    
+     40000   22.868561      1.2623451    
+     41000   22.887084      1.2929868    
+     42000   22.961206      1.2971418    
+     43000   22.937655      1.2850821    
+     44000   23.022976      1.2841432    
+     45000   23.007779      1.2427623    
+     46000   23.089655      1.2767752    
+     47000   23.118516      1.3127989    
+     48000   23.108277      1.2852563    
+     49000   23.175763      1.3005901    
+     50000   23.260181      1.2723835    
+     51000   23.255933      1.3159949    
+     52000   23.297025      1.2807031    
+     53000   23.337232      1.2369259    
+     54000   23.375783      1.2695637    
+     55000   23.346205      1.2645091    
+     56000   23.379828      1.2689631    
+     57000   23.439391      1.2814168    
+     58000   23.487749      1.3051274    
+     59000   23.523897      1.3031459    
+     60000   23.559164      1.2755756    
+     61000   23.618571      1.2719116    
+     62000   23.62812       1.2617492    
+     63000   23.683353      1.2743094    
+     64000   23.69235       1.2764295    
+     65000   23.706248      1.2853279    
+     66000   23.753533      1.2633352    
+     67000   23.776335      1.2628157    
+     68000   23.787572      1.2840854    
+     69000   23.863533      1.3108102    
+     70000   23.874683      1.3162803    
+     71000   23.919635      1.2996154    
+     72000   23.922356      1.2734831    
+     73000   24.035054      1.2784948    
+     74000   24.003646      1.3246976    
+     75000   24.102047      1.3418467    
+     76000   24.103084      1.3264905    
+     77000   24.169972      1.3629406    
+     78000   24.159109      1.3458215    
+     79000   24.206217      1.3569124    
+Fix halt condition for fix-id guard met on step 79325 with value 1.4204965167964159
+Loop time of 41.8222 on 1 procs for 79325 steps with 3000 atoms
+
+Performance: 1638767.817 tau/day, 1896.722 timesteps/s, 5.690 Matom-step/s
+99.9% CPU use with 1 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 5.2403     | 5.2403     | 5.2403     |   0.0 | 12.53
+Bond    | 10.957     | 10.957     | 10.957     |   0.0 | 26.20
+Neigh   | 0.1808     | 0.1808     | 0.1808     |   0.0 |  0.43
+Comm    | 0.090689   | 0.090689   | 0.090689   |   0.0 |  0.22
+Output  | 0.010506   | 0.010506   | 0.010506   |   0.0 |  0.03
+Modify  | 25.015     | 25.015     | 25.015     |   0.0 | 59.81
+Other   |            | 0.3282     |            |       |  0.78
+
+Nlocal:           3000 ave        3000 max        3000 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:            283 ave         283 max         283 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:           7399 ave        7399 max        7399 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 7399
+Ave neighs/atom = 2.4663333
+Ave special neighs/atom = 1.9333333
+Neighbor list builds = 299
+Dangerous builds = 0
+write_dump all custom last.dump id x y z modify sort id format float %.16g
+Total wall time: 0:00:41

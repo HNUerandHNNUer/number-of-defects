@@ -1,0 +1,132 @@
+LAMMPS (22 Jul 2025 - Update 1)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+# ============================================================
+# Brownian dynamics simulation
+# Spherical confinement + active force
+# ============================================================
+
+units           lj
+dimension       3
+boundary        p p p
+atom_style      molecular
+
+neighbor        0.5 bin
+neigh_modify    every 1 delay 0 check yes
+
+special_bonds   fene
+
+
+# ============================================================
+# Read initial configuration
+# ============================================================
+
+read_data       polymer.data
+Reading data file ...
+  orthogonal box = (-33.118622 -33.118622 -33.118622) to (33.118622 33.118622 33.118622)
+  1 by 2 by 2 MPI processor grid
+  reading atoms ...
+  10500 atoms
+  scanning bonds ...
+  1 = max bonds/atom
+  scanning angles ...
+  1 = max angles/atom
+  orthogonal box = (-33.118622 -33.118622 -33.118622) to (33.118622 33.118622 33.118622)
+  1 by 2 by 2 MPI processor grid
+  reading bonds ...
+  10150 bonds
+  reading angles ...
+  9800 angles
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        1        1       
+  special bond factors coul:  0        1        1       
+     2 = max # of 1-2 neighbors
+     2 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_data CPU = 0.049 seconds
+
+comm_modify     cutoff 3.0
+
+group           all type 1
+10500 atoms in group all
+
+
+# ============================================================
+# Force field
+# ============================================================
+
+pair_style      lj/cut 1.1224620483093729814335330496792
+pair_coeff      1 1 1.0 1.0 1.1224620483093729814335330496792
+pair_modify     shift yes
+
+bond_style      fene
+bond_coeff      1 30.0 1.5 1.0 1.0
+
+angle_style     cosine
+angle_coeff     1 30.0
+
+
+# ============================================================
+# Timestep
+# ============================================================
+
+timestep        0.01
+
+
+# ============================================================
+# Thermodynamic output
+# ============================================================
+
+thermo_style    custom step temp ke pe etotal press
+thermo          10000
+
+
+# ============================================================
+# Reset timestep
+# ============================================================
+
+reset_timestep  0
+
+
+# ============================================================
+# Write initial configuration
+# ============================================================
+
+write_dump      all xyz out-0000000000.xyz modify sort id
+WARNING: Calling write_dump before a full system init (src/write_dump.cpp:89)
+
+
+# ============================================================
+# Generate a new random seed every time LAMMPS starts
+# ============================================================
+
+shell /usr/bin/od -An -N4 -tu4 /dev/urandom > .lammps_seed.tmp
+
+variable        rawseed file .lammps_seed.tmp
+
+# IMPORTANT:
+# use v_rawseed, not ${rawseed} inside a quoted formula
+variable        seednum equal floor(v_rawseed%899999999)+1
+variable        seed format seednum %.0f
+
+
+# ============================================================
+# Print and save seed
+# ============================================================
+
+print           "============================================================"
+============================================================
+print           "Random seed for this simulation = ${seed}"
+Random seed for this simulation = 209703063
+print           "============================================================"
+============================================================
+
+shell echo ${seed} > random_seed.txt
+shell echo 209703063 > random_seed.txt
+
+fix             bd all bd/sphere 1000.0 1.0 1.0 ${seed} mchain 30
+fix             bd all bd/sphere 1000.0 1.0 1.0 209703063 mchain 30
+run             10000000
+WARNING: No fixes with time integration, atoms won't move
+For more information see https://docs.lammps.org/err0028 (src/verlet.cpp:60)
+Genera

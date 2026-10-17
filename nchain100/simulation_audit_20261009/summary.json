@@ -1,0 +1,155 @@
+{
+  "parallel": {
+    "frames": 157,
+    "last_step": 15600000,
+    "radius_range": [
+      16.312193863776766,
+      16.42149089822067
+    ],
+    "max_bond": 27.281568751284073,
+    "frames_bond_ge_1p5": 67,
+    "first_bad_bond_step": 9000000,
+    "defect_frames": 157,
+    "defect_last_step": 15600000,
+    "defects_initial": 6.0,
+    "defects_last": 290.0,
+    "defects_range": [
+      6.0,
+      436.0
+    ],
+    "net_charge_range": [
+      2.0,
+      2.0
+    ],
+    "common_early": {
+      "n": 90,
+      "mean": 304.1111111111111,
+      "std": 78.153331406131,
+      "min": 6.0,
+      "max": 412.0
+    },
+    "common_1m_9m": {
+      "n": 80,
+      "mean": 323.5,
+      "std": 52.60750896972789,
+      "min": 206.0,
+      "max": 412.0
+    },
+    "all": {
+      "n": 157,
+      "mean": 323.61783439490443,
+      "std": 68.75457460466261,
+      "min": 6.0,
+      "max": 436.0
+    },
+    "last_half": {
+      "n": 79,
+      "mean": 346.2025316455696,
+      "std": 42.33512464137666,
+      "min": 242.0,
+      "max": 436.0
+    }
+  },
+  "serial": {
+    "frames": 773,
+    "last_step": 77200000,
+    "radius_range": [
+      16.312426127209,
+      16.42367419628628
+    ],
+    "max_bond": 29.724529479805895,
+    "frames_bond_ge_1p5": 542,
+    "first_bad_bond_step": 23100000,
+    "defect_frames": 773,
+    "defect_last_step": 77200000,
+    "defects_initial": 6.0,
+    "defects_last": 314.0,
+    "defects_range": [
+      6.0,
+      454.0
+    ],
+    "net_charge_range": [
+      2.0,
+      2.0
+    ],
+    "common_early": {
+      "n": 90,
+      "mean": 309.15555555555557,
+      "std": 74.06482312603843,
+      "min": 6.0,
+      "max": 422.0
+    },
+    "common_1m_9m": {
+      "n": 80,
+      "mean": 328.7,
+      "std": 36.480268639361746,
+      "min": 250.0,
+      "max": 422.0
+    },
+    "all": {
+      "n": 773,
+      "mean": 322.1009055627426,
+      "std": 48.69819042630878,
+      "min": 6.0,
+      "max": 454.0
+    },
+    "last_half": {
+      "n": 387,
+      "mean": 329.09043927648577,
+      "std": 42.01512692477211,
+      "min": 220.0,
+      "max": 438.0
+    }
+  },
+  "lammps": {
+    "frames": 4986,
+    "last_step": 498500000,
+    "radius_range": [
+      16.30697205671243,
+      16.4211024555844
+    ],
+    "max_bond": 2.637407108385241,
+    "frames_bond_ge_1p5": 582,
+    "first_bad_bond_step": 1300000,
+    "defect_frames": 4986,
+    "defect_last_step": 498500000,
+    "defects_initial": 6.0,
+    "defects_last": 234.0,
+    "defects_range": [
+      6.0,
+      510.0
+    ],
+    "net_charge_range": [
+      2.0,
+      2.0
+    ],
+    "common_early": {
+      "n": 90,
+      "mean": 288.0444444444444,
+      "std": 69.50362278505281,
+      "min": 6.0,
+      "max": 410.0
+    },
+    "common_1m_9m": {
+      "n": 80,
+      "mean": 303.075,
+      "std": 46.38204798195095,
+      "min": 192.0,
+      "max": 410.0
+    },
+    "all": {
+      "n": 4986,
+      "mean": 312.5808263136783,
+      "std": 48.842366859524226,
+      "min": 6.0,
+      "max": 510.0
+    },
+    "last_half": {
+      "n": 2493,
+      "mean": 312.84075411151224,
+      "std": 47.841955429423855,
+      "min": 166.0,
+      "max": 510.0
+    }
+  }
+}

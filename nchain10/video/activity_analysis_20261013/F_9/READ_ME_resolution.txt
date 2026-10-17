@@ -1,0 +1,1 @@
+Finite-interval diagnostics: at high F, temporal_resolution long lags and laboratory pair angular phase increments can alias. Chain principal rotation rates are not continuous unwrapped angular velocities. See the main Chinese report, Section 6. Do not infer actual rotation reversal from high-F principal rates.

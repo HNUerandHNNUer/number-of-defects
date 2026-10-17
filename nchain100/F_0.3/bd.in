@@ -1,0 +1,70 @@
+# Brownian dynamics simulation - reproducing Fortran code exactly
+#package gpu 1 precision single
+#suffix gpu
+#package gpu 1 neigh no
+#suffix gpu
+
+units           lj
+dimension       3
+boundary        p p p
+atom_style      molecular
+neighbor        0.5 bin
+neigh_modify    every 1 delay 0 check yes
+
+special_bonds fene
+# Read initial configuration
+read_data       polymer.data
+comm_modify cutoff 3.0
+# Define groups
+group           all type 1
+
+# Force field parameters
+# WCA potential (repulsive LJ with cutoff at 2^(1/6))
+pair_style      lj/cut 1.1224620483093729814335330496792
+pair_coeff      1 1 1.0 1.0 1.1224620483093729814335330496792
+pair_modify     shift yes
+
+# FENE bonds (K=30, R0=1.5)
+bond_style      fene
+bond_coeff      1 30.0 1.5 1.0 1.0
+
+# Cosine angle potential 
+angle_style     cosine
+angle_coeff     1 30.0
+
+# Set timestep
+timestep        0.01
+
+## Output 
+thermo_style    custom step temp ke pe etotal press
+thermo          10000
+#
+## Equilibration phase 
+#dump            3 all xyz 100000 traj_equil_T_2_F_0.xyz
+#dump_modify     3 sort id
+#run             1000000
+#undump          3
+#unfix           bd
+
+
+# Reset timestep to 0 
+reset_timestep  0
+
+# Write initial sample
+write_dump      all xyz out-0000000000.xyz modify sort id
+
+# Write restart file
+#write_restart   equil.restart
+
+# Production phase 
+#unfix           bd
+# Arguments: ID group bd/sphere gamma T Fext seed mchain value
+fix             bd all bd/sphere 1000.0 1.0 0.3 32245 mchain 30
+
+# Save configurations 
+dump            4 all custom 100000 out-*.xyz id type x y z
+dump_modify     4 pad 10 sort id
+
+# Run production 
+#restart         100000 out-*.data
+run             1000000000

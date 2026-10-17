@@ -1,0 +1,9 @@
+{
+  "angle_force_finite_difference_max_absolute_error": 2.1981003683890776e-09,
+  "force_sum": [
+    0.0,
+    0.0,
+    4.440892098500626e-16
+  ],
+  "gate_half_width_degrees": 8.109614455994183
+}

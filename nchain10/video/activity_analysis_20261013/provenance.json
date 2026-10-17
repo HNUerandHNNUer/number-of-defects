@@ -1,0 +1,395 @@
+[
+  {
+    "F": 0.1,
+    "initial_group": "A",
+    "initial_sha256": "9eea7389ac6c0e7fccfc3702afe19c083157df55ca16c809c106730aaad998db",
+    "fix_expansions": [
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "0.1",
+        "22345",
+        "30"
+      ]
+    ],
+    "production_seed": 22345,
+    "printed_seeds": [],
+    "MPI": 2,
+    "run_steps": [
+      "100000000"
+    ],
+    "thermo_rows": 10001,
+    "has_errors": false,
+    "has_prewarm": false,
+    "log_sha256": "0f45e29146f3897250ffaea9ad0e159f53d019dd6a467daad0a777f21d8769b3"
+  },
+  {
+    "F": 0.17,
+    "initial_group": "A",
+    "initial_sha256": "9eea7389ac6c0e7fccfc3702afe19c083157df55ca16c809c106730aaad998db",
+    "fix_expansions": [
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "0.17",
+        "22345",
+        "30"
+      ]
+    ],
+    "production_seed": 22345,
+    "printed_seeds": [],
+    "MPI": 2,
+    "run_steps": [
+      "100000000"
+    ],
+    "thermo_rows": 10001,
+    "has_errors": false,
+    "has_prewarm": false,
+    "log_sha256": "ea744538d8d417bf1427d1e65e2e6603739f9d680d61a54767bc16d81e6f2bf8"
+  },
+  {
+    "F": 0.3,
+    "initial_group": "B",
+    "initial_sha256": "6a35368ce37676930b24deae4f85cedd4cce8ea57b47b2267699e9150dde3a77",
+    "fix_expansions": [
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "0.3",
+        "22345",
+        "30"
+      ]
+    ],
+    "production_seed": 22345,
+    "printed_seeds": [],
+    "MPI": 2,
+    "run_steps": [
+      "1000000000"
+    ],
+    "thermo_rows": 100001,
+    "has_errors": false,
+    "has_prewarm": false,
+    "log_sha256": "af18f689af07250d25cbf5ac0ba132d060bce379a915427ddd30838397849336"
+  },
+  {
+    "F": 0.55,
+    "initial_group": "A",
+    "initial_sha256": "9eea7389ac6c0e7fccfc3702afe19c083157df55ca16c809c106730aaad998db",
+    "fix_expansions": [
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "0.55",
+        "22345",
+        "30"
+      ]
+    ],
+    "production_seed": 22345,
+    "printed_seeds": [],
+    "MPI": 2,
+    "run_steps": [
+      "100000000"
+    ],
+    "thermo_rows": 10001,
+    "has_errors": false,
+    "has_prewarm": false,
+    "log_sha256": "15a7ca95cfe4ef7eca09c09fe679ea0af9ddd3ec26520bae00a7fb901c6fffd7"
+  },
+  {
+    "F": 1.0,
+    "initial_group": "A",
+    "initial_sha256": "9eea7389ac6c0e7fccfc3702afe19c083157df55ca16c809c106730aaad998db",
+    "fix_expansions": [
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "1.0",
+        "22345",
+        "30"
+      ]
+    ],
+    "production_seed": 22345,
+    "printed_seeds": [],
+    "MPI": 2,
+    "run_steps": [
+      "100000000"
+    ],
+    "thermo_rows": 10001,
+    "has_errors": false,
+    "has_prewarm": false,
+    "log_sha256": "b7a20a286f13eeb99a8f85f31f41217a1644f1df8c19d734db8f8d5d53e9a27d"
+  },
+  {
+    "F": 2.0,
+    "initial_group": "C",
+    "initial_sha256": "99fc5b2904187e2466c7879ea5bc0fe97138ab12de9b7bc9513983c7c584f025",
+    "fix_expansions": [
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "0.1",
+        "149370660",
+        "30"
+      ],
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "2.0",
+        "359274718",
+        "30"
+      ]
+    ],
+    "production_seed": 359274718,
+    "printed_seeds": [
+      "149370660"
+    ],
+    "MPI": 1,
+    "run_steps": [
+      "10000000",
+      "100000000"
+    ],
+    "thermo_rows": 10001,
+    "has_errors": false,
+    "has_prewarm": true,
+    "log_sha256": "71ee5481ae9994ea02f27d420386a9b4fc09da69ba8602510b9ba53a194baa2d"
+  },
+  {
+    "F": 3.0,
+    "initial_group": "B",
+    "initial_sha256": "6a35368ce37676930b24deae4f85cedd4cce8ea57b47b2267699e9150dde3a77",
+    "fix_expansions": [
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "3",
+        "25345",
+        "30"
+      ]
+    ],
+    "production_seed": 25345,
+    "printed_seeds": [],
+    "MPI": 2,
+    "run_steps": [
+      "1000000000"
+    ],
+    "thermo_rows": 100001,
+    "has_errors": false,
+    "has_prewarm": false,
+    "log_sha256": "1713905bd0aab888a7fb95a637a853ac464f40209527c82e5f06503d29b62be7"
+  },
+  {
+    "F": 4.0,
+    "initial_group": "C",
+    "initial_sha256": "99fc5b2904187e2466c7879ea5bc0fe97138ab12de9b7bc9513983c7c584f025",
+    "fix_expansions": [
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "0.1",
+        "48696442",
+        "30"
+      ],
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "4.0",
+        "103511024",
+        "30"
+      ]
+    ],
+    "production_seed": 103511024,
+    "printed_seeds": [
+      "48696442"
+    ],
+    "MPI": 1,
+    "run_steps": [
+      "10000000",
+      "100000000"
+    ],
+    "thermo_rows": 9924,
+    "has_errors": false,
+    "has_prewarm": true,
+    "log_sha256": "435e036a1343add91c263574138be597578c09f1df49716f32c76ae91565dd39"
+  },
+  {
+    "F": 5.0,
+    "initial_group": "A",
+    "initial_sha256": "9eea7389ac6c0e7fccfc3702afe19c083157df55ca16c809c106730aaad998db",
+    "fix_expansions": [
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "5.0",
+        "811987613",
+        "30"
+      ]
+    ],
+    "production_seed": 811987613,
+    "printed_seeds": [
+      "811987613"
+    ],
+    "MPI": 2,
+    "run_steps": [
+      "1000000000"
+    ],
+    "thermo_rows": 100001,
+    "has_errors": false,
+    "has_prewarm": false,
+    "log_sha256": "b22f0f77fc61215d5055de29970556055651f4266bd6b385b50e432ebb3fbca0"
+  },
+  {
+    "F": 6.0,
+    "initial_group": "C",
+    "initial_sha256": "99fc5b2904187e2466c7879ea5bc0fe97138ab12de9b7bc9513983c7c584f025",
+    "fix_expansions": [
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "0.1",
+        "301795168",
+        "30"
+      ],
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "6.0",
+        "1328576",
+        "30"
+      ]
+    ],
+    "production_seed": 1328576,
+    "printed_seeds": [
+      "301795168"
+    ],
+    "MPI": 1,
+    "run_steps": [
+      "10000000",
+      "100000000"
+    ],
+    "thermo_rows": 10001,
+    "has_errors": false,
+    "has_prewarm": true,
+    "log_sha256": "fee929b53bfa22740053cb1d331e97455abb28eaec409c250ccb7a9d68a3a042"
+  },
+  {
+    "F": 7.0,
+    "initial_group": "C",
+    "initial_sha256": "99fc5b2904187e2466c7879ea5bc0fe97138ab12de9b7bc9513983c7c584f025",
+    "fix_expansions": [
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "0.1",
+        "781108749",
+        "30"
+      ],
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "7.0",
+        "394802344",
+        "30"
+      ]
+    ],
+    "production_seed": 394802344,
+    "printed_seeds": [
+      "781108749"
+    ],
+    "MPI": 1,
+    "run_steps": [
+      "10000000",
+      "100000000"
+    ],
+    "thermo_rows": 9992,
+    "has_errors": false,
+    "has_prewarm": true,
+    "log_sha256": "89546f6215dface3afb164236e5963f8750cc16a93b5cf465a365b6b687fba48"
+  },
+  {
+    "F": 8.0,
+    "initial_group": "C",
+    "initial_sha256": "99fc5b2904187e2466c7879ea5bc0fe97138ab12de9b7bc9513983c7c584f025",
+    "fix_expansions": [
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "0.1",
+        "163854420",
+        "30"
+      ],
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "8.0",
+        "827744705",
+        "30"
+      ]
+    ],
+    "production_seed": 827744705,
+    "printed_seeds": [
+      "163854420"
+    ],
+    "MPI": 1,
+    "run_steps": [
+      "10000000",
+      "100000000"
+    ],
+    "thermo_rows": 10001,
+    "has_errors": false,
+    "has_prewarm": true,
+    "log_sha256": "962ff3fa941409800fe1202bacd77acc575d609ff4e936ae1926e7c7508f2c59"
+  },
+  {
+    "F": 9.0,
+    "initial_group": "C",
+    "initial_sha256": "99fc5b2904187e2466c7879ea5bc0fe97138ab12de9b7bc9513983c7c584f025",
+    "fix_expansions": [
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "0.1",
+        "744238590",
+        "30"
+      ],
+      [
+        "bd/sphere",
+        "1000.0",
+        "1.0",
+        "9.0",
+        "744238590",
+        "30"
+      ]
+    ],
+    "production_seed": 744238590,
+    "printed_seeds": [
+      "744238590"
+    ],
+    "MPI": 1,
+    "run_steps": [
+      "10000000",
+      "100000000"
+    ],
+    "thermo_rows": 10001,
+    "has_errors": false,
+    "has_prewarm": true,
+    "log_sha256": "0468ca13e997eec8983fcfac7e238f35febebb8d48bc13ff299eb973ae35d7f4"
+  }
+]

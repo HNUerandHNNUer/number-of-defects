@@ -1,0 +1,268 @@
+{
+  "summary": [
+    {
+      "activity": 0.1,
+      "radius": 5.1756835971906225,
+      "nominal_radius": 5.175492,
+      "n_frames": 1001,
+      "last_step": 100000000,
+      "physical_time": 1000000.0,
+      "fraction_four": 0.9300699300699301,
+      "fraction_extra_pairs": 0.06993006993006994,
+      "mean_defects": 4.147852147852148,
+      "max_defects": 8,
+      "late_fraction_four": 0.9461077844311377,
+      "late_mean_defects": 4.111776447105789,
+      "contour_length": 27.78221690172569,
+      "end_to_end": 4.722323550485752,
+      "initial_azimuthal_nematic": 0.858582590093007,
+      "initial_signed_circulation": -0.317544957758228
+    },
+    {
+      "activity": 0.17,
+      "radius": 5.1756835971906225,
+      "nominal_radius": 5.175492,
+      "n_frames": 1001,
+      "last_step": 100000000,
+      "physical_time": 1000000.0,
+      "fraction_four": 0.926073926073926,
+      "fraction_extra_pairs": 0.07392607392607392,
+      "mean_defects": 4.147852147852148,
+      "max_defects": 6,
+      "late_fraction_four": 0.9161676646706587,
+      "late_mean_defects": 4.167664670658683,
+      "contour_length": 27.78221690172569,
+      "end_to_end": 4.722323550485752,
+      "initial_azimuthal_nematic": 0.858582590093007,
+      "initial_signed_circulation": -0.317544957758228
+    },
+    {
+      "activity": 0.3,
+      "radius": 5.175592528995401,
+      "nominal_radius": 5.175492,
+      "n_frames": 10001,
+      "last_step": 1000000000,
+      "physical_time": 10000000.0,
+      "fraction_four": 0.9474052594740526,
+      "fraction_extra_pairs": 0.052594740525947405,
+      "mean_defects": 4.107789221077892,
+      "max_defects": 8,
+      "late_fraction_four": 0.9428114377124575,
+      "late_mean_defects": 4.11757648470306,
+      "contour_length": 27.827421949042826,
+      "end_to_end": 8.12387428653042,
+      "initial_azimuthal_nematic": 0.5659364087213391,
+      "initial_signed_circulation": -0.7080147827027251
+    },
+    {
+      "activity": 0.55,
+      "radius": 5.1756835971906225,
+      "nominal_radius": 5.175492,
+      "n_frames": 1001,
+      "last_step": 100000000,
+      "physical_time": 1000000.0,
+      "fraction_four": 0.916083916083916,
+      "fraction_extra_pairs": 0.08391608391608392,
+      "mean_defects": 4.16983016983017,
+      "max_defects": 8,
+      "late_fraction_four": 0.906187624750499,
+      "late_mean_defects": 4.187624750499002,
+      "contour_length": 27.78221690172569,
+      "end_to_end": 4.722323550485752,
+      "initial_azimuthal_nematic": 0.858582590093007,
+      "initial_signed_circulation": -0.317544957758228
+    },
+    {
+      "activity": 1.0,
+      "radius": 5.1756835971906225,
+      "nominal_radius": 5.175492,
+      "n_frames": 1001,
+      "last_step": 100000000,
+      "physical_time": 1000000.0,
+      "fraction_four": 0.8931068931068931,
+      "fraction_extra_pairs": 0.1068931068931069,
+      "mean_defects": 4.21978021978022,
+      "max_defects": 8,
+      "late_fraction_four": 0.9161676646706587,
+      "late_mean_defects": 4.171656686626746,
+      "contour_length": 27.78221690172569,
+      "end_to_end": 4.722323550485752,
+      "initial_azimuthal_nematic": 0.858582590093007,
+      "initial_signed_circulation": -0.317544957758228
+    },
+    {
+      "activity": 3.0,
+      "radius": 5.175592528995401,
+      "nominal_radius": 5.175492,
+      "n_frames": 10001,
+      "last_step": 1000000000,
+      "physical_time": 10000000.0,
+      "fraction_four": 0.8575142485751425,
+      "fraction_extra_pairs": 0.1424857514248575,
+      "mean_defects": 4.334166583341666,
+      "max_defects": 16,
+      "late_fraction_four": 0.8708258348330334,
+      "late_mean_defects": 4.266346730653869,
+      "contour_length": 27.827421949042826,
+      "end_to_end": 8.12387428653042,
+      "initial_azimuthal_nematic": 0.5659364087213391,
+      "initial_signed_circulation": -0.7080147827027251
+    },
+    {
+      "activity": 5.0,
+      "radius": 5.1756835971906225,
+      "nominal_radius": 5.175492,
+      "n_frames": 10001,
+      "last_step": 1000000000,
+      "physical_time": 10000000.0,
+      "fraction_four": 0.9471052894710529,
+      "fraction_extra_pairs": 0.052894710528947106,
+      "mean_defects": 4.107989201079892,
+      "max_defects": 8,
+      "late_fraction_four": 0.9456108778244351,
+      "late_mean_defects": 4.110777844431114,
+      "contour_length": 27.78221690172569,
+      "end_to_end": 4.722323550485752,
+      "initial_azimuthal_nematic": 0.858582590093007,
+      "initial_signed_circulation": -0.317544957758228
+    }
+  ],
+  "initial_axes": {
+    "0.1": [
+      -0.8734641816749272,
+      -0.003695258574579252,
+      0.4868743866697205
+    ],
+    "0.17": [
+      -0.8734641816749272,
+      -0.003695258574579252,
+      0.4868743866697205
+    ],
+    "0.3": [
+      0.30909654805893844,
+      -0.5816786423389757,
+      0.7524023398586257
+    ],
+    "0.55": [
+      -0.8734641816749272,
+      -0.003695258574579252,
+      0.4868743866697205
+    ],
+    "1": [
+      -0.8734641816749272,
+      -0.003695258574579252,
+      0.4868743866697205
+    ],
+    "3": [
+      0.30909654805893844,
+      -0.5816786423389757,
+      0.7524023398586257
+    ],
+    "5": [
+      -0.8734641816749272,
+      -0.003695258574579252,
+      0.4868743866697205
+    ]
+  },
+  "initial_defects": {
+    "0.1": [
+      [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      [
+        0.9256005941960098,
+        0.8893160640131869,
+        -0.9954694978085438,
+        -0.8688196833485395
+      ]
+    ],
+    "0.17": [
+      [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      [
+        0.9256005941960098,
+        0.8893160640131869,
+        -0.9954694978085438,
+        -0.8688196833485395
+      ]
+    ],
+    "0.3": [
+      [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      [
+        0.8057252517918472,
+        0.6867721217383536,
+        -0.7587242240897359,
+        -0.7759988621360393
+      ]
+    ],
+    "0.55": [
+      [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      [
+        0.9256005941960098,
+        0.8893160640131869,
+        -0.9954694978085438,
+        -0.8688196833485395
+      ]
+    ],
+    "1": [
+      [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      [
+        0.9256005941960098,
+        0.8893160640131869,
+        -0.9954694978085438,
+        -0.8688196833485395
+      ]
+    ],
+    "3": [
+      [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      [
+        0.8057252517918472,
+        0.6867721217383536,
+        -0.7587242240897359,
+        -0.7759988621360393
+      ]
+    ],
+    "5": [
+      [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      [
+        0.9256005941960098,
+        0.8893160640131869,
+        -0.9954694978085438,
+        -0.8688196833485395
+      ]
+    ]
+  }
+}
+OpenCV unavailable: counts and initial geometry saved; video extraction requires another runtime.

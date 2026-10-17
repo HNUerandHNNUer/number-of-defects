@@ -1,0 +1,137 @@
+# ============================================================
+# Brownian dynamics simulation
+# Spherical confinement + active force
+# ============================================================
+
+units           lj
+dimension       3
+boundary        p p p
+atom_style      molecular
+
+neighbor        0.5 bin
+neigh_modify    every 1 delay 0 check yes
+
+special_bonds   fene
+
+
+# ============================================================
+# Read initial configuration
+# ============================================================
+
+read_data       polymer.data
+
+comm_modify     cutoff 3.0
+
+group           all type 1
+
+
+# ============================================================
+# Force field
+# ============================================================
+
+pair_style      lj/cut 1.1224620483093729814335330496792
+pair_coeff      1 1 1.0 1.0 1.1224620483093729814335330496792
+pair_modify     shift yes
+
+bond_style      fene
+bond_coeff      1 30.0 1.5 1.0 1.0
+
+angle_style     cosine
+angle_coeff     1 30.0
+
+
+# ============================================================
+# Timestep
+# ============================================================
+
+timestep        0.01
+
+
+# ============================================================
+# Thermodynamic output
+# ============================================================
+
+thermo_style    custom step temp ke pe etotal press
+thermo          10000
+
+
+# ============================================================
+# Reset timestep
+# ============================================================
+
+reset_timestep  0
+
+
+# ============================================================
+# Write initial configuration
+# ============================================================
+
+write_dump      all xyz out-0000000000.xyz modify sort id
+
+
+# ============================================================
+# Generate a new random seed every time LAMMPS starts
+# ============================================================
+
+shell /usr/bin/od -An -N4 -tu4 /dev/urandom > .lammps_seed.tmp
+
+variable        rawseed file .lammps_seed.tmp
+
+# IMPORTANT:
+# use v_rawseed, not ${rawseed} inside a quoted formula
+variable        seednum equal floor(v_rawseed%899999999)+1
+variable        seed format seednum %.0f
+
+
+# ============================================================
+# Print and save seed
+# ============================================================
+
+print           "============================================================"
+print           "Random seed for this simulation = ${seed}"
+print           "============================================================"
+
+shell echo ${seed} > random_seed.txt
+
+
+# ============================================================
+# Brownian dynamics
+# ============================================================
+# Arguments: ID group bd/sphere gamma T Fext seed mchain value
+fix             bd all bd/sphere 1000.0 1.0 0.8 ${seed} mchain 30
+
+
+# ============================================================
+# Save configurations
+# ============================================================
+
+dump            4 all custom 100000 out-*.xyz id type x y z
+dump_modify     4 pad 10 sort id
+
+
+# ============================================================
+# Restart files
+# ============================================================
+
+restart         10000000 restart_F25_A.bin restart_F25_B.bin
+
+
+# ============================================================
+# Production run
+# ============================================================
+
+run             100000000
+
+
+# ============================================================
+# Final restart
+# ============================================================
+
+write_restart   restart_F25_step100000000.bin
+
+
+# ============================================================
+# Clean temporary seed file
+# ============================================================
+
+shell rm -f .lammps_seed.tmp

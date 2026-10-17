@@ -1,0 +1,224 @@
+START F= 2 source= E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\gpu2\F_2\defect_out
+Processed 0/1001 frames, defects=30, S=0.684, P=0.279, B=0.356
+Processed 100/1001 frames, defects=4, S=0.827, P=0.920, B=0.796
+Processed 200/1001 frames, defects=4, S=0.823, P=0.923, B=0.850
+Processed 300/1001 frames, defects=4, S=0.824, P=0.925, B=0.866
+Processed 400/1001 frames, defects=4, S=0.826, P=0.927, B=0.864
+Processed 500/1001 frames, defects=4, S=0.825, P=0.927, B=0.856
+Processed 600/1001 frames, defects=4, S=0.828, P=0.928, B=0.873
+Processed 700/1001 frames, defects=4, S=0.826, P=0.928, B=0.875
+Processed 800/1001 frames, defects=4, S=0.837, P=0.926, B=0.855
+Processed 900/1001 frames, defects=4, S=0.822, P=0.924, B=0.856
+Processed 1000/1001 frames, defects=4, S=0.831, P=0.931, B=0.876
+{
+  "F": 2,
+  "gamma": 1000,
+  "temperature": 1,
+  "seed": 359274718,
+  "n_beads": 300,
+  "chain_length": 30,
+  "n_chains": 10,
+  "dt": 0.01,
+  "sample_dt": 1000.0,
+  "frames": 1001,
+  "initial_defects": 30,
+  "final_defects": 4,
+  "first_four_step": 2000000,
+  "all_marker_counts_match_recomputed": true,
+  "max_marker_error_rad": 2.9802322387695312e-08,
+  "axis_total_drift_deg": 17.458103707382417,
+  "h_primary": 1.5,
+  "grid_points": 512
+}
+START F= 4 source= E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\gpu2\F_4\defect_out
+Processed 0/1001 frames, defects=26, S=0.680, P=0.249, B=0.298
+Processed 100/1001 frames, defects=4, S=0.826, P=0.721, B=0.922
+Processed 200/1001 frames, defects=4, S=0.823, P=0.714, B=0.951
+Processed 300/1001 frames, defects=4, S=0.815, P=0.712, B=0.939
+Processed 400/1001 frames, defects=4, S=0.812, P=0.409, B=0.940
+Processed 500/1001 frames, defects=4, S=0.813, P=0.404, B=0.943
+Processed 600/1001 frames, defects=4, S=0.814, P=0.408, B=0.946
+Processed 700/1001 frames, defects=4, S=0.818, P=0.402, B=0.939
+Processed 800/1001 frames, defects=4, S=0.813, P=0.408, B=0.941
+Processed 900/1001 frames, defects=6, S=0.809, P=0.411, B=0.932
+Processed 1000/1001 frames, defects=4, S=0.809, P=0.404, B=0.922
+{
+  "F": 4,
+  "gamma": 1000,
+  "temperature": 1,
+  "seed": 103511024,
+  "n_beads": 300,
+  "chain_length": 30,
+  "n_chains": 10,
+  "dt": 0.01,
+  "sample_dt": 1000.0,
+  "frames": 1001,
+  "initial_defects": 26,
+  "final_defects": 4,
+  "first_four_step": 1300000,
+  "all_marker_counts_match_recomputed": true,
+  "max_marker_error_rad": 2.9802322387695312e-08,
+  "axis_total_drift_deg": 72.01782516538303,
+  "h_primary": 1.5,
+  "grid_points": 512
+}
+START F= 6 source= E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\gpu2\F_6\defect_out
+Processed 0/1001 frames, defects=28, S=0.702, P=0.224, B=0.392
+Processed 100/1001 frames, defects=8, S=0.758, P=0.488, B=0.457
+Processed 200/1001 frames, defects=4, S=0.830, P=0.923, B=0.795
+Processed 300/1001 frames, defects=4, S=0.837, P=0.925, B=0.870
+Processed 400/1001 frames, defects=4, S=0.835, P=0.924, B=0.832
+Processed 500/1001 frames, defects=4, S=0.815, P=0.482, B=0.533
+Processed 600/1001 frames, defects=4, S=0.826, P=0.929, B=0.872
+Processed 700/1001 frames, defects=4, S=0.834, P=0.933, B=0.894
+Processed 800/1001 frames, defects=6, S=0.824, P=0.751, B=0.717
+Processed 900/1001 frames, defects=4, S=0.815, P=0.795, B=0.892
+Processed 1000/1001 frames, defects=4, S=0.805, P=0.805, B=0.902
+{
+  "F": 6,
+  "gamma": 1000,
+  "temperature": 1,
+  "seed": 1328576,
+  "n_beads": 300,
+  "chain_length": 30,
+  "n_chains": 10,
+  "dt": 0.01,
+  "sample_dt": 1000.0,
+  "frames": 1001,
+  "initial_defects": 28,
+  "final_defects": 4,
+  "first_four_step": 3800000,
+  "all_marker_counts_match_recomputed": true,
+  "max_marker_error_rad": 2.9802322387695312e-08,
+  "axis_total_drift_deg": 14.808997639965131,
+  "h_primary": 1.5,
+  "grid_points": 512
+}
+START F= 7 source= E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\gpu2\F_7\defect_out
+Processed 0/1001 frames, defects=32, S=0.690, P=0.253, B=0.329
+Processed 100/1001 frames, defects=4, S=0.800, P=0.918, B=0.917
+Processed 200/1001 frames, defects=6, S=0.807, P=0.921, B=0.923
+Processed 300/1001 frames, defects=4, S=0.808, P=0.918, B=0.921
+Processed 400/1001 frames, defects=4, S=0.827, P=0.935, B=0.914
+Processed 500/1001 frames, defects=4, S=0.824, P=0.927, B=0.862
+Processed 600/1001 frames, defects=4, S=0.815, P=0.810, B=0.925
+Processed 700/1001 frames, defects=4, S=0.815, P=0.808, B=0.921
+Processed 800/1001 frames, defects=4, S=0.813, P=0.814, B=0.918
+Processed 900/1001 frames, defects=4, S=0.807, P=0.807, B=0.892
+Processed 1000/1001 frames, defects=4, S=0.813, P=0.806, B=0.884
+{
+  "F": 7,
+  "gamma": 1000,
+  "temperature": 1,
+  "seed": 394802344,
+  "n_beads": 300,
+  "chain_length": 30,
+  "n_chains": 10,
+  "dt": 0.01,
+  "sample_dt": 1000.0,
+  "frames": 1001,
+  "initial_defects": 32,
+  "final_defects": 4,
+  "first_four_step": 1100000,
+  "all_marker_counts_match_recomputed": true,
+  "max_marker_error_rad": 2.9802322387695312e-08,
+  "axis_total_drift_deg": 61.104357098149855,
+  "h_primary": 1.5,
+  "grid_points": 512
+}
+START F= 8 source= E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\gpu2\F_8\defect_out
+Processed 0/1001 frames, defects=36, S=0.678, P=0.240, B=0.309
+Processed 100/1001 frames, defects=4, S=0.837, P=0.929, B=0.884
+Processed 200/1001 frames, defects=4, S=0.823, P=0.925, B=0.861
+Processed 300/1001 frames, defects=4, S=0.815, P=0.762, B=0.904
+Processed 400/1001 frames, defects=4, S=0.807, P=0.758, B=0.927
+Processed 500/1001 frames, defects=4, S=0.807, P=0.755, B=0.892
+Processed 600/1001 frames, defects=4, S=0.810, P=0.759, B=0.935
+Processed 700/1001 frames, defects=4, S=0.822, P=0.762, B=0.899
+Processed 800/1001 frames, defects=4, S=0.816, P=0.757, B=0.889
+Processed 900/1001 frames, defects=4, S=0.815, P=0.763, B=0.942
+Processed 1000/1001 frames, defects=4, S=0.804, P=0.758, B=0.909
+{
+  "F": 8,
+  "gamma": 1000,
+  "temperature": 1,
+  "seed": 827744705,
+  "n_beads": 300,
+  "chain_length": 30,
+  "n_chains": 10,
+  "dt": 0.01,
+  "sample_dt": 1000.0,
+  "frames": 1001,
+  "initial_defects": 36,
+  "final_defects": 4,
+  "first_four_step": 1300000,
+  "all_marker_counts_match_recomputed": true,
+  "max_marker_error_rad": 2.9802322387695312e-08,
+  "axis_total_drift_deg": 87.90496122424919,
+  "h_primary": 1.5,
+  "grid_points": 512
+}
+START F= 9 source= E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\gpu2\F_9\defect_out
+Processed 0/1001 frames, defects=36, S=0.681, P=0.224, B=0.358
+Processed 100/1001 frames, defects=4, S=0.828, P=0.443, B=0.910
+Processed 200/1001 frames, defects=4, S=0.808, P=0.567, B=0.909
+Processed 300/1001 frames, defects=6, S=0.807, P=0.626, B=0.879
+Processed 400/1001 frames, defects=4, S=0.811, P=0.918, B=0.937
+Processed 500/1001 frames, defects=4, S=0.806, P=0.915, B=0.922
+Processed 600/1001 frames, defects=4, S=0.805, P=0.918, B=0.942
+Processed 700/1001 frames, defects=4, S=0.803, P=0.915, B=0.907
+Processed 800/1001 frames, defects=4, S=0.793, P=0.914, B=0.916
+Processed 900/1001 frames, defects=4, S=0.800, P=0.912, B=0.914
+Processed 1000/1001 frames, defects=4, S=0.809, P=0.916, B=0.920
+{
+  "F": 9,
+  "gamma": 1000,
+  "temperature": 1,
+  "seed": 744238590,
+  "n_beads": 300,
+  "chain_length": 30,
+  "n_chains": 10,
+  "dt": 0.01,
+  "sample_dt": 1000.0,
+  "frames": 1001,
+  "initial_defects": 36,
+  "final_defects": 4,
+  "first_four_step": 4200000,
+  "all_marker_counts_match_recomputed": true,
+  "max_marker_error_rad": 2.9802322387695312e-08,
+  "axis_total_drift_deg": 62.02318832550439,
+  "h_primary": 1.5,
+  "grid_points": 512
+}
+E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\video\postprocess_compression.py:50: RuntimeWarning: invalid value encountered in true_divide
+  qx=np.sum(W*(a*a-b*b),axis=1)/den;qy=np.sum(W*(2*a*b),axis=1)/den
+E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\video\postprocess_compression.py:51: RuntimeWarning: invalid value encountered in true_divide
+  P=np.hypot(px,py);S=np.hypot(qx,qy)
+E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\video\postprocess_compression.py:56: RuntimeWarning: invalid value encountered in true_divide
+  # Sum weights on different molecules; this is a diagnostic for correlated beads.
+E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\video\postprocess_compression.py:59: RuntimeWarning: invalid value encountered in true_divide
+  return dict(P=P,S=S,rho=rho,neff=neff,chain_neff=chain_neff,px=px,py=py,qx=qx,qy=qy)
+E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\video\postprocess_compression.py:50: RuntimeWarning: invalid value encountered in true_divide
+  qx=np.sum(W*(a*a-b*b),axis=1)/den;qy=np.sum(W*(2*a*b),axis=1)/den
+E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\video\postprocess_compression.py:51: RuntimeWarning: invalid value encountered in true_divide
+  P=np.hypot(px,py);S=np.hypot(qx,qy)
+E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\video\postprocess_compression.py:56: RuntimeWarning: invalid value encountered in true_divide
+  # Sum weights on different molecules; this is a diagnostic for correlated beads.
+E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\video\postprocess_compression.py:59: RuntimeWarning: invalid value encountered in true_divide
+  return dict(P=P,S=S,rho=rho,neff=neff,chain_neff=chain_neff,px=px,py=py,qx=qx,qy=qy)
+E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\video\postprocess_compression.py:50: RuntimeWarning: invalid value encountered in true_divide
+  qx=np.sum(W*(a*a-b*b),axis=1)/den;qy=np.sum(W*(2*a*b),axis=1)/den
+E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\video\postprocess_compression.py:51: RuntimeWarning: invalid value encountered in true_divide
+  P=np.hypot(px,py);S=np.hypot(qx,qy)
+E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\video\postprocess_compression.py:56: RuntimeWarning: invalid value encountered in true_divide
+  # Sum weights on different molecules; this is a diagnostic for correlated beads.
+E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\video\postprocess_compression.py:59: RuntimeWarning: invalid value encountered in true_divide
+  return dict(P=P,S=S,rho=rho,neff=neff,chain_neff=chain_neff,px=px,py=py,qx=qx,qy=qy)
+E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\video\postprocess_compression.py:50: RuntimeWarning: invalid value encountered in true_divide
+  qx=np.sum(W*(a*a-b*b),axis=1)/den;qy=np.sum(W*(2*a*b),axis=1)/den
+E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\video\postprocess_compression.py:51: RuntimeWarning: invalid value encountered in true_divide
+  P=np.hypot(px,py);S=np.hypot(qx,qy)
+E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\video\postprocess_compression.py:56: RuntimeWarning: invalid value encountered in true_divide
+  # Sum weights on different molecules; this is a diagnostic for correlated beads.
+E:\1\7.9.2025\3000\phi_0.7\number of defects\new\nchain10\video\postprocess_compression.py:59: RuntimeWarning: invalid value encountered in true_divide
+  return dict(P=P,S=S,rho=rho,neff=neff,chain_neff=chain_neff,px=px,py=py,qx=qx,qy=qy)

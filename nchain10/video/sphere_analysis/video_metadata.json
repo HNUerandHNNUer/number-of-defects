@@ -1,0 +1,38 @@
+[
+  {
+    "file": "0.1.avi",
+    "frames": 1001,
+    "fps": 10.0,
+    "seconds": 100.1
+  },
+  {
+    "file": "0.17.avi",
+    "frames": 1001,
+    "fps": 10.0,
+    "seconds": 100.1
+  },
+  {
+    "file": "0.3.avi",
+    "frames": 10001,
+    "fps": 10.0,
+    "seconds": 1000.1
+  },
+  {
+    "file": "1.avi",
+    "frames": 1001,
+    "fps": 10.0,
+    "seconds": 100.1
+  },
+  {
+    "file": "3.avi",
+    "frames": 10001,
+    "fps": 10.0,
+    "seconds": 1000.1
+  },
+  {
+    "file": "5.avi",
+    "frames": 10001,
+    "fps": 10.0,
+    "seconds": 1000.1
+  }
+]
